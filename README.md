@@ -1,5 +1,5 @@
 # AcoustiNet
-Y8 PBL Project (reupload, original repo at: https://github.com/aliki132/ICT-Y8-Sangria)
+Y8 PBL Project (reupload, original repo at: https://github.com/aliki132/ICT-Y8-Sangria on an old account)
 
 > *Smart Urban Acoustic Management*
 
