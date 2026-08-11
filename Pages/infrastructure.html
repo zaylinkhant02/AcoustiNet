@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infrastructure Decay - AcoustiNet</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../Media/logo-white.png">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg fixed-top custom-nav">
+    <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="../index.html">
+            <div class="logo-icon-bg me-2">
+                <img src="../Media/logo.png" alt="AcoustiNet Logo" width="35">
+            </div>
+            <div class="brand-text">
+                <h1 class="brand-title">AcoustiNet</h1>
+                <p class="brand-subtitle">Smart Urban Acoustic Management</p>
+            </div>
+        </a>
+
+        <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebarMenu" aria-label="navbar-toggler">
+            <div class="bar"></div>
+            <div class="bar short"></div>
+            <div class="bar"></div>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item dropdown mega-dropdown">
+                    <a class="nav-link">Information</a>
+                    <div class="mega-menu">
+                        <div class="menu-column">
+                            <h6 class="menu-header">Mission & Identity</h6>
+                            <a href="../index.html">Homepage</a>
+                            <a href="topic.html">Our Topic</a>
+                            <a href="about.html">About Team</a>
+                            <a href="goals.html">Sustainable Goals</a>
+                        </div>
+                        <div class="menu-image-cap">
+                            <img src="../Media/forest-img.avif" alt="Urban nature">
+                        </div>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown mega-dropdown">
+                    <a class="nav-link">Impact</a>
+                    <div class="mega-menu">
+                        <div class="menu-column">
+                            <h6 class="menu-header">Health & Environment</h6>
+                            <a href="human-health.html">Human Health</a>
+                            <a href="environmental-impact.html">Environmental Impact</a>
+                            <a href="biodiversity.html">Wildlife & Biodiversity</a>
+                            <a href="infrastructure.html">Infrastructure Decay</a>
+                        </div>
+                        <div class="menu-image-cap">
+                            <img src="../Media/sustainability-img.jpg" alt="Sustainability">
+                        </div>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown mega-dropdown">
+                    <a class="nav-link">Our Plan</a>
+                    <div class="mega-menu">
+                        <div class="menu-column">
+                            <h6 class="menu-header">The Strategy</h6>
+                            <a href="quiet_zone.html">What is a Quiet Zone?</a>
+                            <a href="acoustic_management.html">Acoustic Management</a>
+                            <a href="noise_pollution.html">Noise Pollution</a>
+                            <a href="solution.html">Our Solution</a>
+                        </div>
+                        <div class="menu-image-cap">
+                            <img src="../Media/hardware-img.avif" alt="Hardware">
+                        </div>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown mega-dropdown">
+                    <a class="nav-link">Technology</a>
+                    <div class="mega-menu">
+                        <div class="menu-column">
+                            <h6 class="menu-header">Product</h6>
+                            <a href="suggested_technology.html">Suggested Technology</a>
+                            <a href="hardware.html">Hardware Plan</a>
+                            <a href="installation.html">Device Installation</a>
+                            <a href="demonstration.html">Demonstration</a>
+                        </div>
+                        <div class="menu-image-cap">
+                            <img src="../Media/technology-img.avif" alt="Dashboard">
+                        </div>
+                    </div>
+                </li>
+
+                <li class="nav-item ms-lg-4">
+                    <a class="nav-link btn-login px-4 py-2 text-white" href="contact.html">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="offcanvas offcanvas-end custom-sidebar" tabindex="-1" id="sidebarMenu">
+    <div class="offcanvas-header px-4 border-bottom">
+        <div class="d-flex flex-column">
+            <span class="sidebar-label">AcoustiNet</span>
+            <small class="sidebar-subtitle text-muted tracking-wider text-uppercase">Navigation Portal</small>
+        </div>
+        <button type="button" class="btn-close-sidebar" data-bs-dismiss="offcanvas" aria-label="sidebar-close">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+    </div>
+    
+    <div class="offcanvas-body p-0">
+        <div class="accordion accordion-flush" id="sidebarAccordion">
+            <div class="accordion-item border-0 bg-transparent">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed px-4 py-3 fw-700" type="button" data-bs-toggle="collapse" data-bs-target="#side-info">
+                        Information
+                    </button>
+                </h2>
+                <div id="side-info" class="accordion-collapse collapse" data-bs-parent="#sidebarAccordion">
+                    <div class="accordion-body py-2">
+                        <nav class="d-flex flex-column gap-2 ps-2">
+                            <a href="../index.html" class="sidebar-sublink">Homepage</a>
+                            <a href="topic.html" class="sidebar-sublink">Our Topic</a>
+                            <a href="about.html" class="sidebar-sublink">About Team</a>
+                            <a href="goals.html" class="sidebar-sublink">Sustainable Goals</a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item border-0 bg-transparent">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed px-4 py-3 fw-700" type="button" data-bs-toggle="collapse" data-bs-target="#side-impact">
+                        Impact
+                    </button>
+                </h2>
+                <div id="side-impact" class="accordion-collapse collapse" data-bs-parent="#sidebarAccordion">
+                    <div class="accordion-body py-2">
+                        <nav class="d-flex flex-column gap-2 ps-2">
+                            <a href="human-health.html" class="sidebar-sublink">Human Health</a>
+                            <a href="environmental-impact.html" class="sidebar-sublink">Environmental Impact</a>
+                            <a href="biodiversity.html" class="sidebar-sublink">Wildlife & Biodiversity</a>
+                            <a href="infrastructure.html" class="sidebar-sublink">Infrastructure Decay</a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item border-0 bg-transparent">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed px-4 py-3 fw-700" type="button" data-bs-toggle="collapse" data-bs-target="#side-plan">
+                        Our Plan
+                    </button>
+                </h2>
+                <div id="side-plan" class="accordion-collapse collapse" data-bs-parent="#sidebarAccordion">
+                    <div class="accordion-body py-2">
+                        <nav class="d-flex flex-column gap-2 ps-2">
+                            <a href="quiet_zone.html" class="sidebar-sublink">What is a Quiet Zone?</a>
+                            <a href="acoustic_management.html" class="sidebar-sublink">Acoustic Management</a>
+                            <a href="noise_pollution.html" class="sidebar-sublink">Noise Pollution</a>
+                            <a href="solution.html" class="sidebar-sublink">Our Solution</a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item border-0 bg-transparent">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed px-4 py-3 fw-700" type="button" data-bs-toggle="collapse" data-bs-target="#side-tech">
+                        Technology
+                    </button>
+                </h2>
+                <div id="side-tech" class="accordion-collapse collapse" data-bs-parent="#sidebarAccordion">
+                    <div class="accordion-body py-2">
+                        <nav class="d-flex flex-column gap-2 ps-2">
+                            <a href="suggested_technology.html" class="sidebar-sublink">Suggested Technology</a>
+                            <a href="hardware.html" class="sidebar-sublink">Hardware Plan</a>
+                            <a href="installation.html" class="sidebar-sublink">Device Installation</a>
+                            <a href="demonstration.html" class="sidebar-sublink">Demonstration</a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="sidebar-footer px-4 py-4 mt-auto border-top">
+            <a href="contact.html" class="btn btn-login-sidebar w-100 mb-3">Contact Us</a>
+            <div class="footer-meta text-center small opacity-50">AcoustiNet &bull; 2026</div>
+        </div>
+    </div>
+</div>
+
+<section class="infrastructure-hero-section py-5">
+    <div class="container py-lg-5">
+        <div class="row align-items-center g-5">
+            <div class="col-lg-6">
+                <span class="badge bg-danger-subtle text-danger mb-3 px-3 py-2 rounded-pill fw-bold">Structural Integrity</span>
+                <h1 class="display-4 fw-800 color-onyx mb-4">Tracking <span class="text-pine-teal">Infrastructure Decay</span> From Urban Vibrations</h1>
+                <p class="lead text-muted mb-4">
+                    Persistent low-frequency sound waves and traffic-induced ambient vibrations are widely studied in civil engineering due to their effects on nearby structures. Peer-reviewed engineering studies show that continuous structural resonance can contribute to material fatigue and, in sensitive cases, micro-cracking in historical stone masonry and modern transit viaducts alike.
+                </p>
+                <div class="d-flex flex-wrap gap-3 mt-4">
+                    <div class="infrastructure-stat-card p-3 rounded-4 border bg-white shadow-sm">
+                        <span class="stat-number d-block text-danger fw-bold fs-3">3–5 mm/s</span>
+                        <span class="stat-label small text-muted">The DIN 4150-3 short-term PPV guideline threshold for historic or vibration-sensitive structures at low frequencies (1–10 Hz).</span>
+                    </div>
+                    <div class="infrastructure-stat-card p-3 rounded-4 border bg-white shadow-sm">
+                        <span class="stat-number d-block text-danger fw-bold fs-3">0.12 in/s</span>
+                        <span class="stat-label small text-muted">The Federal Transit Administration (FTA) damage criteria limit for buildings extremely susceptible to dynamic structural alterations.</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="infrastructure-image-frame position-relative">
+                    <img src="../Media/concrete-bridge.jpg" alt="Concrete structural bridge with metal railings showing dense urban architecture framework" class="img-fluid rounded-5 shadow-lg">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="structural-resonance-section py-5">
+    <div class="container py-lg-5">
+        <div class="row align-items-center g-5">
+            <div class="col-lg-6 order-2 order-lg-1">
+                <div class="card border-0 bg-white p-4 rounded-4 shadow-sm dynamic-energy-card">
+                    <h5 class="fw-bold color-onyx mb-3">Wave Energy Distribution at the Foundation</h5>
+                    <p class="text-muted small mb-4">When vibrations travel through the soil and encounter a building foundation, the energy is split across several physical pathways rather than being blocked completely:</p>
+                    <ul class="list-unstyled mb-0">
+                        <li class="mb-3 d-flex align-items-start">
+                            <span class="me-2 text-danger">●</span>
+                            <div>
+                                <strong class="color-onyx d-block">Partial Reflection</strong>
+                                <span class="text-muted small">A portion of the wave energy bounces off the foundation boundary and returns to the surrounding soil.</span>
+                            </div>
+                        </li>
+                        <li class="mb-3 d-flex align-items-start">
+                            <span class="me-2 text-danger">●</span>
+                            <div>
+                                <strong class="color-onyx d-block">Partial Refraction</strong>
+                                <span class="text-muted small">The direction of the wave shifts as it crosses into materials with different stiffness levels.</span>
+                            </div>
+                        </li>
+                        <li class="mb-3 d-flex align-items-start">
+                            <span class="me-2 text-danger">●</span>
+                            <div>
+                                <strong class="color-onyx d-block">Energy Dissipation</strong>
+                                <span class="text-muted small">Friction within the soil structure converts some wave energy directly into minor thermal heat.</span>
+                            </div>
+                        </li>
+                        <li class="d-flex align-items-start">
+                            <span class="me-2 text-danger">●</span>
+                            <div>
+                                <strong class="color-onyx d-block">Structural Transmission</strong>
+                                <span class="text-muted small">The remaining energy passes straight into support piles, columns, and floor assemblies.</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-6 order-1 order-lg-2">
+                <span class="badge bg-danger-subtle text-danger mb-3 px-3 py-2 rounded-pill fw-bold">Dynamic Frequency Interaction</span>
+                <h2 class="display-6 fw-bold color-onyx mb-4">Resonance and Building Response</h2>
+                <p class="text-muted mb-4">
+                    The physical risk to a building depends heavily on resonance rather than the initial size of the ground wave. Soil is a complex, lossy, frequency-dependent medium that scatters wave energy and alters its speed. Because the soil and the foundation form a coupled dynamic system, they constantly push forces back and forth against each other.
+                </p>
+                <blockquote class="blockquote border-start border-4 border-danger ps-3 my-4">
+                    <p class="small text-muted mb-0">
+                        "Every building has its own natural frequency. When the incoming frequency of ground waves matches the natural frequency of the structure, resonance occurs. This interaction causes the building to move with greater amplitude."
+                    </p>
+                </blockquote>
+                <p class="text-muted mb-0">
+                    This frequency matching dictates structural stress. Foundation components like deep piles do not always lower wave movement; depending on how stiff the piles are compared to the surrounding soil layers, they can sometimes increase vibration transmission directly into upper floors.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="wear-monitoring-section py-5">
+    <div class="container py-lg-5">
+        <div class="row align-items-center g-5">
+            <div class="col-lg-6">
+                <span class="badge bg-danger-subtle text-danger mb-3 px-3 py-2 rounded-pill fw-bold">Monitoring and Documentation</span>
+                <h2 class="display-6 fw-bold color-onyx mb-4">Methods for Documenting Structural Wear Patterns</h2>
+                <p class="text-muted mb-4">
+                    Because environmental vibrations affect buildings gradually over time, engineering teams rely on physical inspections and tracking instruments to catch changes. Documenting these alterations allows teams to separate pre-existing environmental wear from ongoing movement caused by external forces.
+                </p>
+                <div class="row g-4">
+                    <div class="col-sm-6">
+                        <div class="p-3 rounded-4 bg-light border">
+                            <h6 class="fw-bold color-onyx mb-2">Baseline Condition Surveys</h6>
+                            <p class="text-muted small mb-0">Visual maps of the exterior facade, joints, and foundation walls are completed before monitoring begins to catalog all existing stress points.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="p-3 rounded-4 bg-light border">
+                            <h6 class="fw-bold color-onyx mb-2">Displacement Tracking</h6>
+                            <p class="text-muted small mb-0">Mechanical and optical devices cross-reference small movements along structural seams to see if cracks are stable or widening.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="p-4 rounded-4 border bg-white shadow-sm">
+                    <h5 class="fw-bold color-onyx mb-4">Key Areas of Field Observation</h5>
+                    
+                    <div class="observation-point mb-3 pb-3 border-bottom-subtle">
+                        <span class="fw-semibold color-onyx d-block mb-1">Mortar and Masonry Seams</span>
+                        <p class="text-muted small mb-0">Inspectors search for fine separation lines in brick joints, where repetitive micro-movements can cause binding materials to flake over time.</p>
+                    </div>
+
+                    <div class="observation-point mb-3 pb-3 border-bottom-subtle">
+                        <span class="fw-semibold color-onyx d-block mb-1">Foundation Interface Points</span>
+                        <p class="text-muted small mb-0">Examinations focus on the contact zones where perimeter framing meets concrete slabs, monitoring for signs of separation.</p>
+                    </div>
+
+                    <div class="observation-point">
+                        <span class="fw-semibold color-onyx d-block mb-1">Structural Connection Joints</span>
+                        <p class="text-muted small mb-0">Support hangers, bearing pads, and connection bolts are tracked to ensure that continuous micro-movements do not cause hardware misalignments.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer-section">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-lg-4 col-12 mb-4 mb-lg-0">
+                <div class="footer-brand mb-4">
+                    <img src="../Media/logo.png" alt="Logo" class="brand-logo mb-3">
+                    <h2 class="brand-title">AcoustiNet</h2>
+                    <p class="brand-subtitle">Smart Urban Acoustic Management</p>
+                </div>
+                <p class="footer-desc">
+                    A project focused on silence in local parks and quiet areas.
+                </p>
+            </div>
+
+            <div class="col-lg-2 col-md-3 col-6 mb-4 mb-md-0">
+                <h5 class="footer-heading">Information</h5>
+                <ul class="footer-links">
+                    <li><a href="../index.html">Homepage</a></li>
+                    <li><a href="topic.html">Our Topic</a></li>
+                    <li><a href="about.html">About Team</a></li>
+                    <li><a href="goals.html">Sustainable Goals</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-2 col-md-3 col-6 mb-4 mb-md-0">
+                <h5 class="footer-heading">Impact</h5>
+                <ul class="footer-links">
+                    <li><a href="human-health.html">Human Health</a></li>
+                    <li><a href="environmental-impact.html">Environmental Impact</a></li>
+                    <li><a href="biodiversity.html">Wildlife & Biodiversity</a></li>
+                    <li><a href="infrastructure.html">Infrastructure Decay</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-2 col-md-3 col-6">
+                <h5 class="footer-heading">Our Plan</h5>
+                <ul class="footer-links">
+                    <li><a href="quiet_zone.html">What is a Quiet Zone?</a></li>
+                    <li><a href="acoustic_management.html">Acoustic Management</a></li>
+                    <li><a href="noise_pollution.html">Noise Pollution</a></li>
+                    <li><a href="solution.html">Our Solution</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-2 col-md-3 col-6">
+                <h5 class="footer-heading">Technology</h5>
+                <ul class="footer-links">
+                    <li><a href="suggested_technology.html">Suggested Technology</a></li>
+                    <li><a href="hardware.html">Hardware Plan</a></li>
+                    <li><a href="installation.html">Device Installation</a></li>
+                    <li><a href="demonstration.html">Demonstration</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom mt-5 pt-4">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="copyright-text m-0">© AcoustiNet &bull; 2026. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end mt-3 mt-md-0">
+                    <ul class="footer-bottom-links list-inline m-0">
+                        <li class="list-inline-item me-4">
+                            <a href="contact.html">Contact Us</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://canva.link/20rhx9a28xyix9p">References</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

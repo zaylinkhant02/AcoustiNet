@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demonstration - AcoustiNet</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../Media/logo-white.png">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg fixed-top custom-nav">
+    <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="../index.html">
+            <div class="logo-icon-bg me-2">
+                <img src="../Media/logo.png" alt="AcoustiNet Logo" width="35">
+            </div>
+            <div class="brand-text">
+                <h1 class="brand-title">AcoustiNet</h1>
+                <p class="brand-subtitle">Smart Urban Acoustic Management</p>
+            </div>
+        </a>
+
+        <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebarMenu" aria-label="navbar-toggler">
+            <div class="bar"></div>
+            <div class="bar short"></div>
+            <div class="bar"></div>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item dropdown mega-dropdown">
+                    <a class="nav-link">Information</a>
+                    <div class="mega-menu">
+                        <div class="menu-column">
+                            <h6 class="menu-header">Mission & Identity</h6>
+                            <a href="../index.html">Homepage</a>
+                            <a href="topic.html">Our Topic</a>
+                            <a href="about.html">About Team</a>
+                            <a href="goals.html">Sustainable Goals</a>
+                        </div>
+                        <div class="menu-image-cap">
+                            <img src="../Media/forest-img.avif" alt="Urban nature">
+                        </div>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown mega-dropdown">
+                    <a class="nav-link">Impact</a>
+                    <div class="mega-menu">
+                        <div class="menu-column">
+                            <h6 class="menu-header">Health & Environment</h6>
+                            <a href="human-health.html">Human Health</a>
+                            <a href="environmental-impact.html">Environmental Impact</a>
+                            <a href="biodiversity.html">Wildlife & Biodiversity</a>
+                            <a href="infrastructure.html">Infrastructure Decay</a>
+                        </div>
+                        <div class="menu-image-cap">
+                            <img src="../Media/sustainability-img.jpg" alt="Sustainability">
+                        </div>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown mega-dropdown">
+                    <a class="nav-link">Our Plan</a>
+                    <div class="mega-menu">
+                        <div class="menu-column">
+                            <h6 class="menu-header">The Strategy</h6>
+                            <a href="quiet_zone.html">What is a Quiet Zone?</a>
+                            <a href="acoustic_management.html">Acoustic Management</a>
+                            <a href="noise_pollution.html">Noise Pollution</a>
+                            <a href="solution.html">Our Solution</a>
+                        </div>
+                        <div class="menu-image-cap">
+                            <img src="../Media/hardware-img.avif" alt="Hardware">
+                        </div>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown mega-dropdown">
+                    <a class="nav-link">Technology</a>
+                    <div class="mega-menu">
+                        <div class="menu-column">
+                            <h6 class="menu-header">Product</h6>
+                            <a href="suggested_technology.html">Suggested Technology</a>
+                            <a href="hardware.html">Hardware Plan</a>
+                            <a href="installation.html">Device Installation</a>
+                            <a href="demonstration.html">Demonstration</a>
+                        </div>
+                        <div class="menu-image-cap">
+                            <img src="../Media/technology-img.avif" alt="Dashboard">
+                        </div>
+                    </div>
+                </li>
+
+                <li class="nav-item ms-lg-4">
+                    <a class="nav-link btn-login px-4 py-2 text-white" href="contact.html">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="offcanvas offcanvas-end custom-sidebar" tabindex="-1" id="sidebarMenu">
+    <div class="offcanvas-header px-4 border-bottom">
+        <div class="d-flex flex-column">
+            <span class="sidebar-label">AcoustiNet</span>
+            <small class="sidebar-subtitle text-muted tracking-wider text-uppercase">Navigation Portal</small>
+        </div>
+        <button type="button" class="btn-close-sidebar" data-bs-dismiss="offcanvas" aria-label="sidebar-close">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+    </div>
+    
+    <div class="offcanvas-body p-0">
+        <div class="accordion accordion-flush" id="sidebarAccordion">
+            <div class="accordion-item border-0 bg-transparent">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed px-4 py-3 fw-700" type="button" data-bs-toggle="collapse" data-bs-target="#side-info">
+                        Information
+                    </button>
+                </h2>
+                <div id="side-info" class="accordion-collapse collapse" data-bs-parent="#sidebarAccordion">
+                    <div class="accordion-body py-2">
+                        <nav class="d-flex flex-column gap-2 ps-2">
+                            <a href="../index.html" class="sidebar-sublink">Homepage</a>
+                            <a href="topic.html" class="sidebar-sublink">Our Topic</a>
+                            <a href="about.html" class="sidebar-sublink">About Team</a>
+                            <a href="goals.html" class="sidebar-sublink">Sustainable Goals</a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item border-0 bg-transparent">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed px-4 py-3 fw-700" type="button" data-bs-toggle="collapse" data-bs-target="#side-impact">
+                        Impact
+                    </button>
+                </h2>
+                <div id="side-impact" class="accordion-collapse collapse" data-bs-parent="#sidebarAccordion">
+                    <div class="accordion-body py-2">
+                        <nav class="d-flex flex-column gap-2 ps-2">
+                            <a href="human-health.html" class="sidebar-sublink">Human Health</a>
+                            <a href="environmental-impact.html" class="sidebar-sublink">Environmental Impact</a>
+                            <a href="biodiversity.html" class="sidebar-sublink">Wildlife & Biodiversity</a>
+                            <a href="infrastructure.html" class="sidebar-sublink">Infrastructure Decay</a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item border-0 bg-transparent">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed px-4 py-3 fw-700" type="button" data-bs-toggle="collapse" data-bs-target="#side-plan">
+                        Our Plan
+                    </button>
+                </h2>
+                <div id="side-plan" class="accordion-collapse collapse" data-bs-parent="#sidebarAccordion">
+                    <div class="accordion-body py-2">
+                        <nav class="d-flex flex-column gap-2 ps-2">
+                            <a href="quiet_zone.html" class="sidebar-sublink">What is a Quiet Zone?</a>
+                            <a href="acoustic_management.html" class="sidebar-sublink">Acoustic Management</a>
+                            <a href="noise_pollution.html" class="sidebar-sublink">Noise Pollution</a>
+                            <a href="solution.html" class="sidebar-sublink">Our Solution</a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item border-0 bg-transparent">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed px-4 py-3 fw-700" type="button" data-bs-toggle="collapse" data-bs-target="#side-tech">
+                        Technology
+                    </button>
+                </h2>
+                <div id="side-tech" class="accordion-collapse collapse" data-bs-parent="#sidebarAccordion">
+                    <div class="accordion-body py-2">
+                        <nav class="d-flex flex-column gap-2 ps-2">
+                            <a href="suggested_technology.html" class="sidebar-sublink">Suggested Technology</a>
+                            <a href="hardware.html" class="sidebar-sublink">Hardware Plan</a>
+                            <a href="installation.html" class="sidebar-sublink">Device Installation</a>
+                            <a href="demonstration.html" class="sidebar-sublink">Demonstration</a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="sidebar-footer px-4 py-4 mt-auto border-top">
+            <a href="contact.html" class="btn btn-login-sidebar w-100 mb-3">Contact Us</a>
+            <div class="footer-meta text-center small opacity-50">AcoustiNet &bull; 2026</div>
+        </div>
+    </div>
+</div>
+
+<section id="demo-hero" class="demo-hero-section">
+    <div class="container">
+        <div class="row align-items-center g-5">
+            
+            <div class="col-lg-6">
+                <span class="demo-hero-tag">Demonstration</span>
+                <h1 class="demo-hero-title mb-4">Simple Demonstration</h1>
+                <p class="demo-hero-desc mb-0">
+                    This section provides a basic demonstration of how the concept works. It is designed to show the core idea in a simple and understandable way, without requiring a full real-world deployment. The focus is on explaining how sound data moves through the system from detection to visualization.
+                </p>
+            </div>
+            
+            <div class="col-lg-6">
+                <div class="demo-media-container">
+                    <div class="demo-media-frame">
+                        <img src="../Media/demonstration-img.jpg" alt="Example demonstration">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="hardware-section">
+    <div class="container">
+        <div class="hardware-grid">
+            
+            <div class="hardware-image-container">
+                <img src="../Media/demonstration-img-landscape.jpg" alt="ESP32 and I2S Microphone Hardware Integration Diagram">
+            </div>
+
+            <div>
+                <h2>Hardware Integration</h2>
+                <p>The system utilizes the I2S protocol to ensure low-latency, high-fidelity audio capture. The hardware setup requires a stable 3.3V power connection and proper clock synchronization between the ESP32 master and the digital microphone slave.</p>
+                
+                <div class="code-collapsible">
+                    <button class="collapse-btn" onclick="
+                        const content = this.nextElementSibling; 
+                        content.classList.toggle('hidden'); 
+                        this.querySelector('span').textContent = content.classList.contains('hidden') ? '+' : '−';
+                    ">
+                        View I2S Configuration Code <span>+</span>
+                    </button>
+                    <div class="code-content hidden">
+                        <pre>
+                            #include &lt;Arduino.h&gt;
+                            #include "driver/i2s.h"
+                            #include &lt;math.h&gt;
+
+                            #define I2S_WS 15
+                            #define I2S_SD 32
+                            #define I2S_SCK 14
+                            #define SAMPLE_RATE 16000
+                            #define BLOCK_SIZE 1024
+
+                            void printTimestamp() {
+                                unsigned long ms = millis() + 40815000;
+                                unsigned long totalSeconds = ms / 1000;
+                                unsigned long hours = (totalSeconds / 3600) % 24;
+                                unsigned long minutes = (totalSeconds / 60) % 60;
+                                unsigned long seconds = totalSeconds % 60;
+                                unsigned long milliseconds = ms % 1000;
+
+                                char timeStr[16];
+                                snprintf(timeStr, sizeof(timeStr), "[%02lu:%02lu:%02lu.%03lu]", hours, minutes, seconds, milliseconds);
+                                Serial.print(timeStr);
+                            }
+
+                            void setup() {
+                                Serial.begin(115200);
+                                while (!Serial) {
+                                    delay(10);
+                                }
+
+                                printTimestamp();
+                                Serial.println(" [INFO] Initializing I2S Bus...");
+
+                                i2s_config_t i2s_config = {
+                                    .mode = (i2s_mode_t)(I2S_MODE_MASTER | I2S_MODE_RX),
+                                    .sample_rate = SAMPLE_RATE,
+                                    .bits_per_sample = I2S_BITS_PER_SAMPLE_32BIT,
+                                    .channel_format = I2S_CHANNEL_FMT_ONLY_LEFT,
+                                    .communication_format = I2S_COMM_FORMAT_STAND_I2S,
+                                    .intr_alloc_flags = ESP_INTR_FLAG_LEVEL1,
+                                    .dma_buf_count = 8,
+                                    .dma_buf_len = BLOCK_SIZE,
+                                    .use_apll = false,
+                                    .tx_desc_auto_clear = true,
+                                    .fixed_mclk = 0
+                                };
+
+                                i2s_pin_config_t pin_config = {
+                                    .bck_io_num = I2S_SCK,
+                                    .ws_io_num = I2S_WS,
+                                    .data_out_num = I2S_PIN_NO_CHANGE,
+                                    .data_in_num = I2S_SD
+                                };
+
+                                esp_err_t err = i2s_driver_install(I2S_NUM_0, &i2s_config, 0, NULL);
+                                if (err == ESP_OK) {
+                                    i2s_set_pin(I2S_NUM_0, &pin_config);
+                                    i2s_zero_dma_buffer(I2S_NUM_0);
+
+                                    printTimestamp();
+                                    Serial.println(" [SUCCESS] I2S Driver Installed.");
+                                    printTimestamp();
+                                    Serial.println(" [INFO] Configuration: 16000Hz / 32-bit");
+                                } else {
+                                    printTimestamp();
+                                    Serial.print(" [ERROR] I2S driver install failed: ");
+                                    Serial.println(err);
+                                }
+                            }
+
+                            void loop() {
+                                static int32_t buffer[BLOCK_SIZE];
+                                size_t bytes_read = 0;
+
+                                esp_err_t err = i2s_read(I2S_NUM_0, buffer, sizeof(buffer), &bytes_read, portMAX_DELAY);
+                                if (err != ESP_OK) {
+                                    printTimestamp();
+                                    Serial.print(" [ERROR] I2S read failed: ");
+                                    Serial.println(err);
+                                    delay(1000);
+                                    return;
+                                }
+
+                                int samples_read = bytes_read / sizeof(int32_t);
+                                if (samples_read &lt;= 0) {
+                                    return;
+                                }
+
+                                double sum = 0.0;
+                                for (int i = 0; i &lt; samples_read; i++) {
+                                    int32_t sample = buffer[i] &gt;&gt; 8; // convert 32-bit left-aligned to 24-bit signed
+                                    sum += double(sample) * double(sample);
+                                }
+
+                                double rms = sqrt(sum / samples_read);
+                                if (rms &lt;= 0.0) {
+                                    return;
+                                }
+
+                                double dbfs = 20.0 * log10(rms / 8388607.0);
+
+                                printTimestamp();
+                                Serial.print(" Raw RMS: ");
+                                Serial.print(rms, 2);
+                                Serial.print(" | dBFS: ");
+                                Serial.print(dbfs, 2);
+                                Serial.println();
+                            }
+                        </pre>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section id="demo-content" class="demo-content-section">
+    <div class="container">
+        <div class="demo-grid">
+            
+            <div class="demo-block">
+                <h2>Expected Serial Monitor Output</h2>
+                <p>When the device is running correctly, the system initializes the hardware peripherals and streams calculations to the serial interface console using the format below:</p>
+                <div class="demo-terminal-mock">
+                    <div class="demo-terminal-line"><span class="demo-terminal-time">[11:20:15.002]</span>[INFO] Initializing I2S Bus...</div>
+                    <div class="demo-terminal-line demo-terminal-success"><span class="demo-terminal-time">[11:20:15.045]</span>[SUCCESS] I2S Driver Installed.</div>
+                    <div class="demo-terminal-line"><span class="demo-terminal-time">[11:20:15.046]</span>[INFO] Configuration: 16000Hz / 32-bit</div>
+                    <div class="demo-terminal-line"><span class="demo-terminal-time">[11:20:15.150]</span>Raw RMS: 845.30 | Volume: 40.07 dB</div>
+                    <div class="demo-terminal-line"><span class="demo-terminal-time">[11:20:15.253]</span>Raw RMS: 912.80 | Volume: 40.73 dB</div>
+                    <div class="demo-terminal-line"><span class="demo-terminal-time">[11:20:15.351]</span>Raw RMS: 53045.60 | Volume: 76.01 dB</div>
+                    <div class="demo-terminal-line"><span class="demo-terminal-time">[11:20:15.454]</span>Raw RMS: 1240.10 | Volume: 43.40 dB</div>
+                </div>
+            </div>
+
+            <div class="demo-block">
+                <h2>Hardware Verification Checklist</h2>
+                <p>Verify that your physical device behaves according to these core baseline performance guidelines during a standard testing evaluation:</p>
+                <ul class="demo-list">
+                    <li><strong>Power Verification:</strong> The onboard red power LED lights up solid immediately when connected to a live USB interface port.</li>
+                    <li><strong>Data Transmission:</strong> The internal data processing routine refreshes automatically without causing device timeouts or reboots.</li>
+                    <li><strong>Acoustic Response:</strong> Making a sharp sound close to the hardware module shell causes a visible, corresponding rise in the calculated output properties.</li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<footer class="footer-section">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-lg-4 col-12 mb-4 mb-lg-0">
+                <div class="footer-brand mb-4">
+                    <img src="../Media/logo.png" alt="Logo" class="brand-logo mb-3">
+                    <h2 class="brand-title">AcoustiNet</h2>
+                    <p class="brand-subtitle">Smart Urban Acoustic Management</p>
+                </div>
+                <p class="footer-desc">
+                    A project focused on silence in local parks and quiet areas.
+                </p>
+            </div>
+
+            <div class="col-lg-2 col-md-3 col-6 mb-4 mb-md-0">
+                <h5 class="footer-heading">Information</h5>
+                <ul class="footer-links">
+                    <li><a href="../index.html">Homepage</a></li>
+                    <li><a href="topic.html">Our Topic</a></li>
+                    <li><a href="about.html">About Team</a></li>
+                    <li><a href="goals.html">Sustainable Goals</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-2 col-md-3 col-6 mb-4 mb-md-0">
+                <h5 class="footer-heading">Impact</h5>
+                <ul class="footer-links">
+                    <li><a href="human-health.html">Human Health</a></li>
+                    <li><a href="environmental-impact.html">Environmental Impact</a></li>
+                    <li><a href="biodiversity.html">Wildlife & Biodiversity</a></li>
+                    <li><a href="infrastructure.html">Infrastructure Decay</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-2 col-md-3 col-6">
+                <h5 class="footer-heading">Our Plan</h5>
+                <ul class="footer-links">
+                    <li><a href="quiet_zone.html">What is a Quiet Zone?</a></li>
+                    <li><a href="acoustic_management.html">Acoustic Management</a></li>
+                    <li><a href="noise_pollution.html">Noise Pollution</a></li>
+                    <li><a href="solution.html">Our Solution</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-2 col-md-3 col-6">
+                <h5 class="footer-heading">Technology</h5>
+                <ul class="footer-links">
+                    <li><a href="suggested_technology.html">Suggested Technology</a></li>
+                    <li><a href="hardware.html">Hardware Plan</a></li>
+                    <li><a href="installation.html">Device Installation</a></li>
+                    <li><a href="demonstration.html">Demonstration</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom mt-5 pt-4">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="copyright-text m-0">© AcoustiNet &bull; 2026. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end mt-3 mt-md-0">
+                    <ul class="footer-bottom-links list-inline m-0">
+                        <li class="list-inline-item me-4">
+                            <a href="contact.html">Contact Us</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://canva.link/20rhx9a28xyix9p">References</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wildlife & Biodiversity - AcoustiNet</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../Media/logo-white.png">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg fixed-top custom-nav">
+    <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="../index.html">
+            <div class="logo-icon-bg me-2">
+                <img src="../Media/logo.png" alt="AcoustiNet Logo" width="35">
+            </div>
+            <div class="brand-text">
+                <h1 class="brand-title">AcoustiNet</h1>
+                <p class="brand-subtitle">Smart Urban Acoustic Management</p>
+            </div>
+        </a>
+
+        <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebarMenu" aria-label="navbar-toggler">
+            <div class="bar"></div>
+            <div class="bar short"></div>
+            <div class="bar"></div>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item dropdown mega-dropdown">
+                    <a class="nav-link">Information</a>
+                    <div class="mega-menu">
+                        <div class="menu-column">
+                            <h6 class="menu-header">Mission & Identity</h6>
+                            <a href="../index.html">Homepage</a>
+                            <a href="topic.html">Our Topic</a>
+                            <a href="about.html">About Team</a>
+                            <a href="goals.html">Sustainable Goals</a>
+                        </div>
+                        <div class="menu-image-cap">
+                            <img src="../Media/forest-img.avif" alt="Urban nature">
+                        </div>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown mega-dropdown">
+                    <a class="nav-link">Impact</a>
+                    <div class="mega-menu">
+                        <div class="menu-column">
+                            <h6 class="menu-header">Health & Environment</h6>
+                            <a href="human-health.html">Human Health</a>
+                            <a href="environmental-impact.html">Environmental Impact</a>
+                            <a href="biodiversity.html">Wildlife & Biodiversity</a>
+                            <a href="infrastructure.html">Infrastructure Decay</a>
+                        </div>
+                        <div class="menu-image-cap">
+                            <img src="../Media/sustainability-img.jpg" alt="Sustainability">
+                        </div>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown mega-dropdown">
+                    <a class="nav-link">Our Plan</a>
+                    <div class="mega-menu">
+                        <div class="menu-column">
+                            <h6 class="menu-header">The Strategy</h6>
+                            <a href="quiet_zone.html">What is a Quiet Zone?</a>
+                            <a href="acoustic_management.html">Acoustic Management</a>
+                            <a href="noise_pollution.html">Noise Pollution</a>
+                            <a href="solution.html">Our Solution</a>
+                        </div>
+                        <div class="menu-image-cap">
+                            <img src="../Media/hardware-img.avif" alt="Hardware">
+                        </div>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown mega-dropdown">
+                    <a class="nav-link">Technology</a>
+                    <div class="mega-menu">
+                        <div class="menu-column">
+                            <h6 class="menu-header">Product</h6>
+                            <a href="suggested_technology.html">Suggested Technology</a>
+                            <a href="hardware.html">Hardware Plan</a>
+                            <a href="installation.html">Device Installation</a>
+                            <a href="demonstration.html">Demonstration</a>
+                        </div>
+                        <div class="menu-image-cap">
+                            <img src="../Media/technology-img.avif" alt="Dashboard">
+                        </div>
+                    </div>
+                </li>
+
+                <li class="nav-item ms-lg-4">
+                    <a class="nav-link btn-login px-4 py-2 text-white" href="contact.html">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="offcanvas offcanvas-end custom-sidebar" tabindex="-1" id="sidebarMenu">
+    <div class="offcanvas-header px-4 border-bottom">
+        <div class="d-flex flex-column">
+            <span class="sidebar-label">AcoustiNet</span>
+            <small class="sidebar-subtitle text-muted tracking-wider text-uppercase">Navigation Portal</small>
+        </div>
+        <button type="button" class="btn-close-sidebar" data-bs-dismiss="offcanvas" aria-label="sidebar-close">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+    </div>
+    
+    <div class="offcanvas-body p-0">
+        <div class="accordion accordion-flush" id="sidebarAccordion">
+            <div class="accordion-item border-0 bg-transparent">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed px-4 py-3 fw-700" type="button" data-bs-toggle="collapse" data-bs-target="#side-info">
+                        Information
+                    </button>
+                </h2>
+                <div id="side-info" class="accordion-collapse collapse" data-bs-parent="#sidebarAccordion">
+                    <div class="accordion-body py-2">
+                        <nav class="d-flex flex-column gap-2 ps-2">
+                            <a href="../index.html" class="sidebar-sublink">Homepage</a>
+                            <a href="topic.html" class="sidebar-sublink">Our Topic</a>
+                            <a href="about.html" class="sidebar-sublink">About Team</a>
+                            <a href="goals.html" class="sidebar-sublink">Sustainable Goals</a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item border-0 bg-transparent">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed px-4 py-3 fw-700" type="button" data-bs-toggle="collapse" data-bs-target="#side-impact">
+                        Impact
+                    </button>
+                </h2>
+                <div id="side-impact" class="accordion-collapse collapse" data-bs-parent="#sidebarAccordion">
+                    <div class="accordion-body py-2">
+                        <nav class="d-flex flex-column gap-2 ps-2">
+                            <a href="human-health.html" class="sidebar-sublink">Human Health</a>
+                            <a href="environmental-impact.html" class="sidebar-sublink">Environmental Impact</a>
+                            <a href="biodiversity.html" class="sidebar-sublink">Wildlife & Biodiversity</a>
+                            <a href="infrastructure.html" class="sidebar-sublink">Infrastructure Decay</a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item border-0 bg-transparent">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed px-4 py-3 fw-700" type="button" data-bs-toggle="collapse" data-bs-target="#side-plan">
+                        Our Plan
+                    </button>
+                </h2>
+                <div id="side-plan" class="accordion-collapse collapse" data-bs-parent="#sidebarAccordion">
+                    <div class="accordion-body py-2">
+                        <nav class="d-flex flex-column gap-2 ps-2">
+                            <a href="quiet_zone.html" class="sidebar-sublink">What is a Quiet Zone?</a>
+                            <a href="acoustic_management.html" class="sidebar-sublink">Acoustic Management</a>
+                            <a href="noise_pollution.html" class="sidebar-sublink">Noise Pollution</a>
+                            <a href="solution.html" class="sidebar-sublink">Our Solution</a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item border-0 bg-transparent">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed px-4 py-3 fw-700" type="button" data-bs-toggle="collapse" data-bs-target="#side-tech">
+                        Technology
+                    </button>
+                </h2>
+                <div id="side-tech" class="accordion-collapse collapse" data-bs-parent="#sidebarAccordion">
+                    <div class="accordion-body py-2">
+                        <nav class="d-flex flex-column gap-2 ps-2">
+                            <a href="suggested_technology.html" class="sidebar-sublink">Suggested Technology</a>
+                            <a href="hardware.html" class="sidebar-sublink">Hardware Plan</a>
+                            <a href="installation.html" class="sidebar-sublink">Device Installation</a>
+                            <a href="demonstration.html" class="sidebar-sublink">Demonstration</a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="sidebar-footer px-4 py-4 mt-auto border-top">
+            <a href="contact.html" class="btn btn-login-sidebar w-100 mb-3">Contact Us</a>
+            <div class="footer-meta text-center small opacity-50">AcoustiNet &bull; 2026</div>
+        </div>
+    </div>
+</div>
+
+<section class="wildlife-hero-section py-5">
+    <div class="container py-lg-5">
+        <div class="row align-items-center g-5">
+            <div class="col-lg-6">
+                <span class="badge bg-success mb-3 px-3 py-2 rounded-pill">Wildlife & Biodiversity</span>
+                <h1 class="display-4 fw-800 color-onyx mb-4">Protecting Our <span class="text-pine-teal">Urban Wildlife</span></h1>
+                <p class="lead text-muted mb-4">
+                    City sounds do more than drown out the peace of nature. Verified global research from major groups like the <strong>National Park Service (NPS, 2024)</strong> shows that human-made noise creates a chaotic environment for birds, insects, and small mammals trying to survive in green spaces.
+                </p>
+                <blockquote class="blockquote border-start border-4 border-success ps-3 my-4">
+                    <p class="small text-muted mb-0">
+                        "A landmark scientific study across multiple natural zones (Shannon et al., 2016) proved that noise levels as low as 40 decibels alter how animals find food, stay safe from danger, and raise their young."
+                    </p>
+                </blockquote>
+                <div class="d-flex flex-wrap gap-3 mt-4">
+                    <div class="biodiversity-stat-card p-3 rounded-4 border bg-white">
+                        <span class="stat-number d-block text-success fw-bold fs-3">40 dB</span>
+                        <span class="stat-label small text-muted">The low noise level where wildlife behavior begins to shift</span>
+                    </div>
+                    <div class="biodiversity-stat-card p-3 rounded-4 border bg-white">
+                        <span class="stat-number d-block text-success fw-bold fs-3">100+</span>
+                        <span class="stat-label small text-muted">Animal species proven to be impacted by background traffic sounds</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="wildlife-image-frame position-relative">
+                    <img src="../Media/sunlight-filtering-img.jpeg" alt="Sunlight filtering through an urban forest park canopy full of wildlife" class="img-fluid rounded-5 shadow-lg">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="acoustic-masking-section py-5">
+    <div class="container py-lg-5">
+        <div class="row align-items-center g-5">
+            <div class="col-lg-6 order-2 order-lg-1">
+                <div class="row g-3">
+                    <div class="col-12">
+                        <div class="masking-image-box position-relative rounded-4 overflow-hidden shadow">
+                            <img src="../Media/bird-branch-img.png" alt="Small urban bird singing on a branch" class="w-100 img-fluid communication-bird-img">
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="citation-note-card p-4 rounded-4 border bg-white shadow-sm">
+                            <h6 class="fw-bold color-onyx mb-2">Verified Field Test</h6>
+                            <p class="text-muted small mb-0">
+                                Researchers tracking city wildlife discovered that birds living near major transit highways must expend up more physical energy just to make their daily mating calls loud enough to be heard over background engine roars.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 order-1 order-lg-2">
+                <span class="badge bg-success mb-3 px-3 py-2 rounded-pill">Animal Communication</span>
+                <h2 class="display-6 fw-bold color-onyx mb-4">Drowning Out the Sounds of Nature</h2>
+                <p class="text-muted mb-4">
+                    When traffic sounds match the pitch of animal calls, it causes a problem called acoustic masking. This simply means city noise acts like a loud blanket that covers up natural sounds. A famous study published in the science journal <strong>Nature (Slabbekoorn & Peet, 2003)</strong> proved that city birds are forced to change how they sing just to talk to each other.
+                </p>
+                <blockquote class="blockquote border-start border-4 border-success ps-3 my-4">
+                    <p class="small text-muted mb-0">
+                        "Urban birds in loud areas alter their natural behavior by singing at a much higher pitch. They do this so their songs can cut through the low-frequency rumble of trucks and cars."
+                    </p>
+                </blockquote>
+                <p class="text-muted mb-4">
+                    This forced change makes it much harder for young birds to learn the correct songs from their parents, which weakens the whole local animal community over time.
+                </p>
+                <div class="masking-metrics-list border-top pt-4">
+                    <div class="row g-3">
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-center">
+                                <div class="metric-bullet bg-success-subtle rounded-circle me-3"></div>
+                                <div>
+                                    <span class="d-block fw-bold color-onyx">Higher Pitch</span>
+                                    <small class="text-muted">Birds change their natural notes</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-center">
+                                <div class="metric-bullet bg-success-subtle rounded-circle me-3"></div>
+                                <div>
+                                    <span class="d-block fw-bold color-onyx">Shorter Songs</span>
+                                    <small class="text-muted">Less information is shared</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="wildlife-stress-section py-5">
+    <div class="container py-lg-5">
+        <div class="row align-items-center g-5">
+            <div class="col-lg-6">
+                <span class="badge bg-success mb-3 px-3 py-2 rounded-pill">Hormonal & Fitness Data</span>
+                <h2 class="display-6 fw-bold color-onyx mb-4">Chronic Noise Triggers Constant Physiological Stress</h2>
+                <p class="text-muted mb-4">
+                    Persistent city noise acts as an inescapable stressor that alters the physical health of wildlife. A milestone study by <strong>Kleist et al. (2018)</strong> found that birds nesting in environments with constant noise suffer from severe hormonal imbalances that stunt the physical development of their offspring.
+                </p>
+                <blockquote class="blockquote border-start border-4 border-success ps-3 my-4">
+                    <p class="small text-muted mb-0">
+                        "Constant exposure to noise causes a major dysregulation of baseline stress hormones, which directly harms reproductive fitness and lowers the hatching success rate of eggs."
+                    </p>
+                </blockquote>
+                <p class="text-muted mb-0">
+                    By monitoring these acoustic thresholds, our tracking system outlines the areas where high decibel baselines trigger invisible, long-term biological damage to urban ecosystems.
+                </p>
+            </div>
+            <div class="col-lg-6">
+                <div class="card border-0 bg-light p-4 rounded-4 shadow-sm">
+                    <h5 class="fw-bold color-onyx mb-3">Biological Consequences of Chronic Noise</h5>
+                    <div class="table-responsive">
+                        <table class="table table-borderless table-sm mb-0">
+                            <thead>
+                                <tr class="border-bottom">
+                                    <th class="text-muted small py-2">Observed Effect</th>
+                                    <th class="text-muted small py-2">Impact on Fitness</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="border-bottom-subtle">
+                                    <td class="py-3 fw-semibold text-success">Hypocorticism</td>
+                                    <td class="py-3 text-muted small">Chronically suppressed baseline stress hormone levels due to continuous, inescapable noise exposure.</td>
+                                </tr>
+                                <tr class="border-bottom-subtle">
+                                    <td class="py-3 fw-semibold text-success">Stunted Development</td>
+                                    <td class="py-3 text-muted small">Nestlings experience significantly lower body weight and shorter feather growth in high-noise areas.</td>
+                                </tr>
+                                <tr>
+                                    <td class="py-3 fw-semibold text-success">Lower Hatching Rates</td>
+                                    <td class="py-3 text-muted small">A measurable drop in the number of eggs that hatch successfully within zones adjacent to major transit machinery.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer-section">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-lg-4 col-12 mb-4 mb-lg-0">
+                <div class="footer-brand mb-4">
+                    <img src="../Media/logo.png" alt="Logo" class="brand-logo mb-3">
+                    <h2 class="brand-title">AcoustiNet</h2>
+                    <p class="brand-subtitle">Smart Urban Acoustic Management</p>
+                </div>
+                <p class="footer-desc">
+                    A project focused on silence in local parks and quiet areas.
+                </p>
+            </div>
+
+            <div class="col-lg-2 col-md-3 col-6 mb-4 mb-md-0">
+                <h5 class="footer-heading">Information</h5>
+                <ul class="footer-links">
+                    <li><a href="../index.html">Homepage</a></li>
+                    <li><a href="topic.html">Our Topic</a></li>
+                    <li><a href="about.html">About Team</a></li>
+                    <li><a href="goals.html">Sustainable Goals</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-2 col-md-3 col-6 mb-4 mb-md-0">
+                <h5 class="footer-heading">Impact</h5>
+                <ul class="footer-links">
+                    <li><a href="human-health.html">Human Health</a></li>
+                    <li><a href="environmental-impact.html">Environmental Impact</a></li>
+                    <li><a href="biodiversity.html">Wildlife & Biodiversity</a></li>
+                    <li><a href="infrastructure.html">Infrastructure Decay</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-2 col-md-3 col-6">
+                <h5 class="footer-heading">Our Plan</h5>
+                <ul class="footer-links">
+                    <li><a href="quiet_zone.html">What is a Quiet Zone?</a></li>
+                    <li><a href="acoustic_management.html">Acoustic Management</a></li>
+                    <li><a href="noise_pollution.html">Noise Pollution</a></li>
+                    <li><a href="solution.html">Our Solution</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-2 col-md-3 col-6">
+                <h5 class="footer-heading">Technology</h5>
+                <ul class="footer-links">
+                    <li><a href="suggested_technology.html">Suggested Technology</a></li>
+                    <li><a href="hardware.html">Hardware Plan</a></li>
+                    <li><a href="installation.html">Device Installation</a></li>
+                    <li><a href="demonstration.html">Demonstration</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom mt-5 pt-4">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="copyright-text m-0">© AcoustiNet &bull; 2026. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end mt-3 mt-md-0">
+                    <ul class="footer-bottom-links list-inline m-0">
+                        <li class="list-inline-item me-4">
+                            <a href="contact.html">Contact Us</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://canva.link/20rhx9a28xyix9p">References</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noise Pollution - AcoustiNet</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../Media/logo-white.png">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg fixed-top custom-nav">
+    <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="../index.html">
+            <div class="logo-icon-bg me-2">
+                <img src="../Media/logo.png" alt="AcoustiNet Logo" width="35">
+            </div>
+            <div class="brand-text">
+                <h1 class="brand-title">AcoustiNet</h1>
+                <p class="brand-subtitle">Smart Urban Acoustic Management</p>
+            </div>
+        </a>
+
+        <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebarMenu" aria-label="navbar-toggler">
+            <div class="bar"></div>
+            <div class="bar short"></div>
+            <div class="bar"></div>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item dropdown mega-dropdown">
+                    <a class="nav-link">Information</a>
+                    <div class="mega-menu">
+                        <div class="menu-column">
+                            <h6 class="menu-header">Mission & Identity</h6>
+                            <a href="../index.html">Homepage</a>
+                            <a href="topic.html">Our Topic</a>
+                            <a href="about.html">About Team</a>
+                            <a href="goals.html">Sustainable Goals</a>
+                        </div>
+                        <div class="menu-image-cap">
+                            <img src="../Media/forest-img.avif" alt="Urban nature">
+                        </div>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown mega-dropdown">
+                    <a class="nav-link">Impact</a>
+                    <div class="mega-menu">
+                        <div class="menu-column">
+                            <h6 class="menu-header">Health & Environment</h6>
+                            <a href="human-health.html">Human Health</a>
+                            <a href="environmental-impact.html">Environmental Impact</a>
+                            <a href="biodiversity.html">Wildlife & Biodiversity</a>
+                            <a href="infrastructure.html">Infrastructure Decay</a>
+                        </div>
+                        <div class="menu-image-cap">
+                            <img src="../Media/sustainability-img.jpg" alt="Sustainability">
+                        </div>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown mega-dropdown">
+                    <a class="nav-link">Our Plan</a>
+                    <div class="mega-menu">
+                        <div class="menu-column">
+                            <h6 class="menu-header">The Strategy</h6>
+                            <a href="quiet_zone.html">What is a Quiet Zone?</a>
+                            <a href="acoustic_management.html">Acoustic Management</a>
+                            <a href="noise_pollution.html">Noise Pollution</a>
+                            <a href="solution.html">Our Solution</a>
+                        </div>
+                        <div class="menu-image-cap">
+                            <img src="../Media/hardware-img.avif" alt="Hardware">
+                        </div>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown mega-dropdown">
+                    <a class="nav-link">Technology</a>
+                    <div class="mega-menu">
+                        <div class="menu-column">
+                            <h6 class="menu-header">Product</h6>
+                            <a href="suggested_technology.html">Suggested Technology</a>
+                            <a href="hardware.html">Hardware Plan</a>
+                            <a href="installation.html">Device Installation</a>
+                            <a href="demonstration.html">Demonstration</a>
+                        </div>
+                        <div class="menu-image-cap">
+                            <img src="../Media/technology-img.avif" alt="Dashboard">
+                        </div>
+                    </div>
+                </li>
+
+                <li class="nav-item ms-lg-4">
+                    <a class="nav-link btn-login px-4 py-2 text-white" href="contact.html">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="offcanvas offcanvas-end custom-sidebar" tabindex="-1" id="sidebarMenu">
+    <div class="offcanvas-header px-4 border-bottom">
+        <div class="d-flex flex-column">
+            <span class="sidebar-label">AcoustiNet</span>
+            <small class="sidebar-subtitle text-muted tracking-wider text-uppercase">Navigation Portal</small>
+        </div>
+        <button type="button" class="btn-close-sidebar" data-bs-dismiss="offcanvas" aria-label="sidebar-close">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+    </div>
+    
+    <div class="offcanvas-body p-0">
+        <div class="accordion accordion-flush" id="sidebarAccordion">
+            <div class="accordion-item border-0 bg-transparent">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed px-4 py-3 fw-700" type="button" data-bs-toggle="collapse" data-bs-target="#side-info">
+                        Information
+                    </button>
+                </h2>
+                <div id="side-info" class="accordion-collapse collapse" data-bs-parent="#sidebarAccordion">
+                    <div class="accordion-body py-2">
+                        <nav class="d-flex flex-column gap-2 ps-2">
+                            <a href="../index.html" class="sidebar-sublink">Homepage</a>
+                            <a href="topic.html" class="sidebar-sublink">Our Topic</a>
+                            <a href="about.html" class="sidebar-sublink">About Team</a>
+                            <a href="goals.html" class="sidebar-sublink">Sustainable Goals</a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item border-0 bg-transparent">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed px-4 py-3 fw-700" type="button" data-bs-toggle="collapse" data-bs-target="#side-impact">
+                        Impact
+                    </button>
+                </h2>
+                <div id="side-impact" class="accordion-collapse collapse" data-bs-parent="#sidebarAccordion">
+                    <div class="accordion-body py-2">
+                        <nav class="d-flex flex-column gap-2 ps-2">
+                            <a href="human-health.html" class="sidebar-sublink">Human Health</a>
+                            <a href="environmental-impact.html" class="sidebar-sublink">Environmental Impact</a>
+                            <a href="biodiversity.html" class="sidebar-sublink">Wildlife & Biodiversity</a>
+                            <a href="infrastructure.html" class="sidebar-sublink">Infrastructure Decay</a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item border-0 bg-transparent">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed px-4 py-3 fw-700" type="button" data-bs-toggle="collapse" data-bs-target="#side-plan">
+                        Our Plan
+                    </button>
+                </h2>
+                <div id="side-plan" class="accordion-collapse collapse" data-bs-parent="#sidebarAccordion">
+                    <div class="accordion-body py-2">
+                        <nav class="d-flex flex-column gap-2 ps-2">
+                            <a href="quiet_zone.html" class="sidebar-sublink">What is a Quiet Zone?</a>
+                            <a href="acoustic_management.html" class="sidebar-sublink">Acoustic Management</a>
+                            <a href="noise_pollution.html" class="sidebar-sublink">Noise Pollution</a>
+                            <a href="solution.html" class="sidebar-sublink">Our Solution</a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item border-0 bg-transparent">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed px-4 py-3 fw-700" type="button" data-bs-toggle="collapse" data-bs-target="#side-tech">
+                        Technology
+                    </button>
+                </h2>
+                <div id="side-tech" class="accordion-collapse collapse" data-bs-parent="#sidebarAccordion">
+                    <div class="accordion-body py-2">
+                        <nav class="d-flex flex-column gap-2 ps-2">
+                            <a href="suggested_technology.html" class="sidebar-sublink">Suggested Technology</a>
+                            <a href="hardware.html" class="sidebar-sublink">Hardware Plan</a>
+                            <a href="installation.html" class="sidebar-sublink">Device Installation</a>
+                            <a href="demonstration.html" class="sidebar-sublink">Demonstration</a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="sidebar-footer px-4 py-4 mt-auto border-top">
+            <a href="contact.html" class="btn btn-login-sidebar w-100 mb-3">Contact Us</a>
+            <div class="footer-meta text-center small opacity-50">AcoustiNet &bull; 2026</div>
+        </div>
+    </div>
+</div>
+
+<section class="noise-pollution-hero py-5 bg-light">
+    <div class="container py-lg-5 position-relative z-1">
+        <div class="row align-items-center g-5">
+            <div class="col-lg-6">
+                <span class="badge bg-success-subtle text-success mb-3 px-3 py-2 rounded-pill fw-bold">Environmental Impact</span>
+                <h1 class="display-5 fw-bold color-onyx mb-4">Understanding Noise Pollution in Modern Cities</h1>
+                <p class="text-muted lead-text mb-0">
+                    Noise pollution is an invisible environmental hazard that impacts millions of urban residents daily. Continuous exposure to elevated decibel levels from transit, industry, and construction disrupts local ecosystems and compromises public health.
+                </p>
+            </div>
+            
+            <div class="col-lg-6">
+                <div class="hero-img-designer-frame">
+                    <div class="hero-img-mask">
+                        <img src="../Media/noise_pollution-plane-img.jpg" alt="Image of noise pollution via airplane">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="noise-pollution-effects py-5">
+    <div class="container py-lg-5">
+        <div class="row mb-5 justify-content-center text-center">
+            <div class="col-lg-8">
+                <span class="badge bg-danger-subtle text-danger mb-3 px-3 py-2 rounded-pill fw-bold">Health Threats</span>
+                <h2 class="fw-bold color-onyx mb-3">How Loud Noise Harms the Body</h2>
+                <p class="text-muted">
+                    Living with constant city noise does more than just annoy people. Click the tabs below to see how high sound levels cause real harm to human health over time.
+                </p>
+            </div>
+        </div>
+
+        <div class="row g-5">
+            <div class="col-lg-4">
+                <div class="nav flex-column nav-pills pollution-pills gap-3" id="v-pills-effects-tab" role="tablist" aria-orientation="vertical">
+                    <button class="nav-link active rounded-4 p-3 border text-start" id="v-pills-hearing-tab" data-bs-toggle="pill" data-bs-target="#v-pills-hearing" type="button" role="tab" aria-controls="v-pills-hearing" aria-selected="true">
+                        <span class="fw-bold d-block h6 mb-1">Hearing Loss</span>
+                        <span class="small opacity-75">Permanent damage from loud sounds.</span>
+                    </button>
+                    <button class="nav-link rounded-4 p-3 border text-start" id="v-pills-stress-tab" data-bs-toggle="pill" data-bs-target="#v-pills-stress" type="button" role="tab" aria-controls="v-pills-stress" aria-selected="false">
+                        <span class="fw-bold d-block h6 mb-1">High Stress Levels</span>
+                        <span class="small opacity-75">Constant worry and body tension.</span>
+                    </button>
+                    <button class="nav-link rounded-4 p-3 border text-start" id="v-pills-heart-tab" data-bs-toggle="pill" data-bs-target="#v-pills-heart" type="button" role="tab" aria-controls="v-pills-heart" aria-selected="false">
+                        <span class="fw-bold d-block h6 mb-1">Heart Problems</span>
+                        <span class="small opacity-75">Higher blood pressure over time.</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="col-lg-8">
+                <div class="tab-content" id="v-pills-effects-tabContent">
+                    
+                    <div class="tab-pane fade show active" id="v-pills-hearing" role="tabpanel" aria-labelledby="v-pills-hearing-tab">
+                        <div class="row align-items-center g-4">
+                            <div class="col-md-6">
+                                <h3 class="fw-bold color-onyx mb-3">Hearing Loss</h3>
+                                <p class="text-muted mb-0">
+                                    Sounds above 85 decibels can destroy the tiny hair cells inside your inner ear. Once these microscopic cells are flattened by heavy traffic or low-flying planes, they can never grow back, causing permanent hearing damage.
+                                </p>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="tab-img-designer-frame">
+                                    <div class="tab-img-mask">
+                                        <img src="../Media/tabpane-noise-effect-1-img.avif" alt="Person holding hand over ear due to painful loud city noise">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="v-pills-stress" role="tabpanel" aria-labelledby="v-pills-stress-tab">
+                        <div class="row align-items-center g-4">
+                            <div class="col-md-6">
+                                <h3 class="fw-bold color-onyx mb-3">High Stress Levels</h3>
+                                <p class="text-muted mb-0">
+                                    Even while you sleep, your ears pick up background city noises and send warning signals to your brain. This forces your body to constantly pump out stress hormones like cortisol and adrenaline, leaving you tired and anxious.
+                                </p>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="tab-img-designer-frame">
+                                    <div class="tab-img-mask">
+                                        <img src="../Media/tabpane-noise-effect-2-img.webp" alt="Stressed person looking down in a loud urban setting">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="v-pills-heart" role="tabpanel" aria-labelledby="v-pills-heart-tab">
+                        <div class="row align-items-center g-4">
+                            <div class="col-md-6">
+                                <h3 class="fw-bold color-onyx mb-3">Heart Problems</h3>
+                                <p class="text-muted mb-0">
+                                    Long-term exposure to loud neighborhood sounds keeps your blood vessels tight and narrow. Studies show that living with regular night-time traffic noise significantly increases the risk of high blood pressure and heart attacks.
+                                </p>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="tab-img-designer-frame">
+                                    <div class="tab-img-mask">
+                                        <img src="../Media/tabpane-noise-effect-3-img.png" alt="Doctor checking patient blood pressure tracking health metrics">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="noise-measurement-section py-5 bg-light">
+    <div class="container py-lg-5">
+        <div class="row mb-5 justify-content-center text-center">
+            <div class="col-lg-8">
+                <span class="badge bg-pine-light text-pine-teal mb-3 px-3 py-2 rounded-pill fw-bold">Risk Tracking</span>
+                <h2 class="fw-bold color-onyx mb-3">Measuring Sound Thresholds</h2>
+                <p class="text-muted">
+                    Environmental safety groups use precise tools to track noise threat levels. Click the target buttons below to reveal details about common city decibel scales.
+                </p>
+            </div>
+        </div>
+
+        <div class="row g-5 align-items-center">
+            <div class="col-lg-6">
+                <div class="d-flex flex-column gap-3">
+                    
+                    <div>
+                        <button class="collapse-trigger-btn d-flex align-items-center justify-content-between" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDecibelScale" aria-expanded="true" aria-controls="collapseDecibelScale">
+                            <span>Safe Environmental Standards</span>
+                            <span class="spinner-grow spinner-grow-sm text-pine-teal" role="status">
+                                <span class="visually-hidden">Active Monitoring Scale</span>
+                            </span>
+                        </button>
+                        <div class="collapse show" id="collapseDecibelScale">
+                            <div class="p-3 bg-white border border-top-0 rounded-bottom-4 text-muted">
+                                The World Health Organization states that regular daytime sound levels should stay under 55 decibels. Keeping neighborhood volumes below this marker prevents long-term stress responses and protects public sleeping conditions.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <button class="collapse-trigger-btn collapsed d-flex align-items-center justify-content-between" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDangerScale" aria-expanded="false" aria-controls="collapseDangerScale">
+                            <span>Dangerous Exposure Zones</span>
+                            <span class="spinner-grow spinner-grow-sm text-danger" role="status">
+                                <span class="visually-hidden">Active Alert Scale</span>
+                            </span>
+                        </button>
+                        <div class="collapse" id="collapseDangerScale">
+                            <div class="p-3 bg-white border border-top-0 rounded-bottom-4 text-muted">
+                                Consistent exposure to sounds crossing 85 decibels, like industrial drills or heavy trucking lanes, requires protective gear. Any sustained volume over this line accelerates cellular ear damage.
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="pollution-measurement-box p-4 rounded-4">
+                    <div class="measurement-img-frame border border-subtle shadow-sm">
+                        <img src="../Media/noise-tracking-img.png" alt="Digital sound level decibel tracking device">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="noise-check-section py-5">
+    <div class="container py-lg-5">
+        
+        <div class="row mb-5 justify-content-center text-center">
+            <div class="col-lg-8">
+                <span class="badge bg-pine-light text-pine-teal mb-3 px-3 py-2 rounded-pill fw-bold">Zoning Plan</span>
+                <h2 class="fw-bold color-onyx mb-3">How to Check a City Quiet Zone</h2>
+                <p class="text-muted">
+                    Follow these steps to find out if a designated community space meets the required noise standards.
+                </p>
+            </div>
+        </div>
+
+        <div class="row g-4 mb-5">
+            
+            <div class="col-md-4">
+                <div class="interactive-step-card p-4 h-100 d-flex flex-column align-items-start">
+                    <div class="step-badge-number d-flex align-items-center justify-content-center mb-3">1</div>
+                    <h3 class="h5 fw-bold color-onyx mb-2">Check the Borders</h3>
+                    <p class="text-muted small mb-0">
+                        Walk along the edge of the quiet space. Look for how well the area handles incoming sounds from nearby 
+                        <button type="button" class="btn-inline-trigger" 
+                                data-bs-toggle="tooltip" 
+                                data-bs-custom-class="custom-tooltip-theme" 
+                                data-bs-placement="top" 
+                                title="This includes delivery trucks, main highway traffic, or train tracks running next to the zone.">
+                            transportation routes
+                        </button> or commercial shopping centers.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="interactive-step-card p-4 h-100 d-flex flex-column align-items-start">
+                    <div class="step-badge-number d-flex align-items-center justify-content-center mb-3">2</div>
+                    <h3 class="h5 fw-bold color-onyx mb-2">Test Peak Hours</h3>
+                    <p class="text-muted small mb-3">
+                        Measure the sound levels during the loudest parts of the day, like the morning rush hour.
+                    </p>
+                    <button type="button" class="card-action-trigger mt-auto"
+                            aria-label="Why peak hour testing matters"
+                            data-bs-container="body" 
+                            data-bs-toggle="popover" 
+                            data-bs-custom-class="custom-popover-theme"
+                            data-bs-placement="top" 
+                            data-bs-title="Why Peak Hours Matter" 
+                            data-bs-content="A true quiet zone must maintain low sound levels even when the surrounding city is at its busiest, or the buffer walls are failing.">
+                        Why does this matter?
+                    </button>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="interactive-step-card p-4 h-100 d-flex flex-column align-items-start">
+                    <div class="step-badge-number d-flex align-items-center justify-content-center mb-3">3</div>
+                    <h3 class="h5 fw-bold color-onyx mb-2">Review Sound Data</h3>
+                    <p class="text-muted small mb-3">
+                        Use public sound maps to see if the average noise remains under the safe limit over several weeks.
+                    </p>
+                    <button type="button" class="card-action-trigger mt-auto"
+                            aria-label="How to read zone decibel targets"
+                            data-bs-container="body" 
+                            data-bs-toggle="popover" 
+                            data-bs-custom-class="custom-popover-theme"
+                            data-bs-placement="top" 
+                            data-bs-title="Target Noise Levels" 
+                            data-bs-content="Official quiet zones should stay below 50 decibels during daylight hours to give the human nervous system a complete break from city noise.">
+                        What do the numbers mean?
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row align-items-center g-5">
+            <div class="col-lg-6">
+                <h3 class="fw-bold color-onyx mb-3">Protecting Our Quiet Spaces</h3>
+                <p class="text-muted">
+                    Once a quiet zone is set up, keeping it safe requires active planning. Planting thick rows of trees, building solid earthen walls, and setting up clear signs can help block out city traffic sound waves.
+                </p>
+                <p class="text-muted mb-0">
+                    Communities must work with local planners to make sure these special parks and green spots stay well away from expanding commercial zones.
+                </p>
+            </div>
+            <div class="col-lg-6">
+                <div class="panel-media-frame">
+                    <img src="../Media/city-quiet-park-img.jpg" alt="A peaceful city park designated as a quiet zone with tall trees and walking paths shielding it from traffic">
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<footer class="footer-section">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-lg-4 col-12 mb-4 mb-lg-0">
+                <div class="footer-brand mb-4">
+                    <img src="../Media/logo.png" alt="Logo" class="brand-logo mb-3">
+                    <h2 class="brand-title">AcoustiNet</h2>
+                    <p class="brand-subtitle">Smart Urban Acoustic Management</p>
+                </div>
+                <p class="footer-desc">
+                    A project focused on silence in local parks and quiet areas.
+                </p>
+            </div>
+
+            <div class="col-lg-2 col-md-3 col-6 mb-4 mb-md-0">
+                <h5 class="footer-heading">Information</h5>
+                <ul class="footer-links">
+                    <li><a href="../index.html">Homepage</a></li>
+                    <li><a href="topic.html">Our Topic</a></li>
+                    <li><a href="about.html">About Team</a></li>
+                    <li><a href="goals.html">Sustainable Goals</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-2 col-md-3 col-6 mb-4 mb-md-0">
+                <h5 class="footer-heading">Impact</h5>
+                <ul class="footer-links">
+                    <li><a href="human-health.html">Human Health</a></li>
+                    <li><a href="environmental-impact.html">Environmental Impact</a></li>
+                    <li><a href="biodiversity.html">Wildlife & Biodiversity</a></li>
+                    <li><a href="infrastructure.html">Infrastructure Decay</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-2 col-md-3 col-6">
+                <h5 class="footer-heading">Our Plan</h5>
+                <ul class="footer-links">
+                    <li><a href="quiet_zone.html">What is a Quiet Zone?</a></li>
+                    <li><a href="acoustic_management.html">Acoustic Management</a></li>
+                    <li><a href="noise_pollution.html">Noise Pollution</a></li>
+                    <li><a href="solution.html">Our Solution</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-2 col-md-3 col-6">
+                <h5 class="footer-heading">Technology</h5>
+                <ul class="footer-links">
+                    <li><a href="suggested_technology.html">Suggested Technology</a></li>
+                    <li><a href="hardware.html">Hardware Plan</a></li>
+                    <li><a href="installation.html">Device Installation</a></li>
+                    <li><a href="demonstration.html">Demonstration</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom mt-5 pt-4">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="copyright-text m-0">© AcoustiNet &bull; 2026. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end mt-3 mt-md-0">
+                    <ul class="footer-bottom-links list-inline m-0">
+                        <li class="list-inline-item me-4">
+                            <a href="contact.html">Contact Us</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://canva.link/20rhx9a28xyix9p">References</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl);
+        });
+
+        var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'));
+        var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+            return new bootstrap.Popover(popoverTriggerEl);
+        });
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Device Installation - AcoustiNet</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../Media/logo-white.png">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg fixed-top custom-nav">
+    <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="../index.html">
+            <div class="logo-icon-bg me-2">
+                <img src="../Media/logo.png" alt="AcoustiNet Logo" width="35">
+            </div>
+            <div class="brand-text">
+                <h1 class="brand-title">AcoustiNet</h1>
+                <p class="brand-subtitle">Smart Urban Acoustic Management</p>
+            </div>
+        </a>
+
+        <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebarMenu" aria-label="navbar-toggler">
+            <div class="bar"></div>
+            <div class="bar short"></div>
+            <div class="bar"></div>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item dropdown mega-dropdown">
+                    <a class="nav-link">Information</a>
+                    <div class="mega-menu">
+                        <div class="menu-column">
+                            <h6 class="menu-header">Mission & Identity</h6>
+                            <a href="../index.html">Homepage</a>
+                            <a href="topic.html">Our Topic</a>
+                            <a href="about.html">About Team</a>
+                            <a href="goals.html">Sustainable Goals</a>
+                        </div>
+                        <div class="menu-image-cap">
+                            <img src="../Media/forest-img.avif" alt="Urban nature">
+                        </div>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown mega-dropdown">
+                    <a class="nav-link">Impact</a>
+                    <div class="mega-menu">
+                        <div class="menu-column">
+                            <h6 class="menu-header">Health & Environment</h6>
+                            <a href="human-health.html">Human Health</a>
+                            <a href="environmental-impact.html">Environmental Impact</a>
+                            <a href="biodiversity.html">Wildlife & Biodiversity</a>
+                            <a href="infrastructure.html">Infrastructure Decay</a>
+                        </div>
+                        <div class="menu-image-cap">
+                            <img src="../Media/sustainability-img.jpg" alt="Sustainability">
+                        </div>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown mega-dropdown">
+                    <a class="nav-link">Our Plan</a>
+                    <div class="mega-menu">
+                        <div class="menu-column">
+                            <h6 class="menu-header">The Strategy</h6>
+                            <a href="quiet_zone.html">What is a Quiet Zone?</a>
+                            <a href="acoustic_management.html">Acoustic Management</a>
+                            <a href="noise_pollution.html">Noise Pollution</a>
+                            <a href="solution.html">Our Solution</a>
+                        </div>
+                        <div class="menu-image-cap">
+                            <img src="../Media/hardware-img.avif" alt="Hardware">
+                        </div>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown mega-dropdown">
+                    <a class="nav-link">Technology</a>
+                    <div class="mega-menu">
+                        <div class="menu-column">
+                            <h6 class="menu-header">Product</h6>
+                            <a href="suggested_technology.html">Suggested Technology</a>
+                            <a href="hardware.html">Hardware Plan</a>
+                            <a href="installation.html">Device Installation</a>
+                            <a href="demonstration.html">Demonstration</a>
+                        </div>
+                        <div class="menu-image-cap">
+                            <img src="../Media/technology-img.avif" alt="Dashboard">
+                        </div>
+                    </div>
+                </li>
+
+                <li class="nav-item ms-lg-4">
+                    <a class="nav-link btn-login px-4 py-2 text-white" href="contact.html">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="offcanvas offcanvas-end custom-sidebar" tabindex="-1" id="sidebarMenu">
+    <div class="offcanvas-header px-4 border-bottom">
+        <div class="d-flex flex-column">
+            <span class="sidebar-label">AcoustiNet</span>
+            <small class="sidebar-subtitle text-muted tracking-wider text-uppercase">Navigation Portal</small>
+        </div>
+        <button type="button" class="btn-close-sidebar" data-bs-dismiss="offcanvas" aria-label="sidebar-close">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+    </div>
+    
+    <div class="offcanvas-body p-0">
+        <div class="accordion accordion-flush" id="sidebarAccordion">
+            <div class="accordion-item border-0 bg-transparent">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed px-4 py-3 fw-700" type="button" data-bs-toggle="collapse" data-bs-target="#side-info">
+                        Information
+                    </button>
+                </h2>
+                <div id="side-info" class="accordion-collapse collapse" data-bs-parent="#sidebarAccordion">
+                    <div class="accordion-body py-2">
+                        <nav class="d-flex flex-column gap-2 ps-2">
+                            <a href="../index.html" class="sidebar-sublink">Homepage</a>
+                            <a href="topic.html" class="sidebar-sublink">Our Topic</a>
+                            <a href="about.html" class="sidebar-sublink">About Team</a>
+                            <a href="goals.html" class="sidebar-sublink">Sustainable Goals</a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item border-0 bg-transparent">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed px-4 py-3 fw-700" type="button" data-bs-toggle="collapse" data-bs-target="#side-impact">
+                        Impact
+                    </button>
+                </h2>
+                <div id="side-impact" class="accordion-collapse collapse" data-bs-parent="#sidebarAccordion">
+                    <div class="accordion-body py-2">
+                        <nav class="d-flex flex-column gap-2 ps-2">
+                            <a href="human-health.html" class="sidebar-sublink">Human Health</a>
+                            <a href="environmental-impact.html" class="sidebar-sublink">Environmental Impact</a>
+                            <a href="biodiversity.html" class="sidebar-sublink">Wildlife & Biodiversity</a>
+                            <a href="infrastructure.html" class="sidebar-sublink">Infrastructure Decay</a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item border-0 bg-transparent">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed px-4 py-3 fw-700" type="button" data-bs-toggle="collapse" data-bs-target="#side-plan">
+                        Our Plan
+                    </button>
+                </h2>
+                <div id="side-plan" class="accordion-collapse collapse" data-bs-parent="#sidebarAccordion">
+                    <div class="accordion-body py-2">
+                        <nav class="d-flex flex-column gap-2 ps-2">
+                            <a href="quiet_zone.html" class="sidebar-sublink">What is a Quiet Zone?</a>
+                            <a href="acoustic_management.html" class="sidebar-sublink">Acoustic Management</a>
+                            <a href="noise_pollution.html" class="sidebar-sublink">Noise Pollution</a>
+                            <a href="solution.html" class="sidebar-sublink">Our Solution</a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item border-0 bg-transparent">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed px-4 py-3 fw-700" type="button" data-bs-toggle="collapse" data-bs-target="#side-tech">
+                        Technology
+                    </button>
+                </h2>
+                <div id="side-tech" class="accordion-collapse collapse" data-bs-parent="#sidebarAccordion">
+                    <div class="accordion-body py-2">
+                        <nav class="d-flex flex-column gap-2 ps-2">
+                            <a href="suggested_technology.html" class="sidebar-sublink">Suggested Technology</a>
+                            <a href="hardware.html" class="sidebar-sublink">Hardware Plan</a>
+                            <a href="installation.html" class="sidebar-sublink">Device Installation</a>
+                            <a href="demonstration.html" class="sidebar-sublink">Demonstration</a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="sidebar-footer px-4 py-4 mt-auto border-top">
+            <a href="contact.html" class="btn btn-login-sidebar w-100 mb-3">Contact Us</a>
+            <div class="footer-meta text-center small opacity-50">AcoustiNet &bull; 2026</div>
+        </div>
+    </div>
+</div>
+
+<section id="install-hero" class="install-hero-section">
+    <div class="container">
+        <div class="row align-items-center g-5">
+            
+            <div class="col-lg-6">
+                <span class="install-hero-tag">Mounting Guide</span>
+                <h1 class="install-hero-title mb-4">Device Installation</h1>
+                <p class="install-hero-desc mb-0">
+                    This page explains how to safely mount your finished weather box in outdoor public spaces. Learn how to pick the right spot on a wall or pole, secure the box using strong metal brackets, and safely route the 5V power cord to an outlet so your noise tracker stays up and running permanently.
+                </p>
+            </div>
+            
+            <div class="col-lg-6">
+                <div class="install-media-container">
+                    <div class="install-media-frame">
+                        <img src="../Media/box-mounted.jpg" alt="A weatherproof plastic box being mounted securely onto an outdoor brick wall with tools nearby">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section id="install-spot" class="install-spot-section">
+    <div class="container">
+
+        <div class="install-spot-header text-center">
+            <span class="install-spot-tag">Step 1</span>
+            <h2 class="install-spot-title">Selecting the Installation Spot</h2>
+        </div>
+
+        <div class="spot-requirements-container">
+
+            <div class="spot-requirement-card">
+                <h3>Vertical Height Requirements</h3>
+                <p>Before drilling any holes, use a tape measure to find a spot that is high enough off the ground to keep the equipment secure from accidental bumps, vandalism, or curious animals.</p>
+                <ul>
+                    <li><strong>Minimum Height:</strong> Choose a location that is at least 8 feet (2.4 meters) above the ground level.</li>
+                    <li><strong>Maximum Height:</strong> Do not exceed 12 feet (3.6 meters) high, as you will need to safely reach the box with a standard ladder for occasional cleaning or maintenance checks.</li>
+                    <li><strong>Surface Type:</strong> Look for flat, solid surfaces like brick walls, thick wooden poles, or concrete pillars that can support the weight of the box during heavy wind storms.</li>
+                </ul>
+            </div>
+
+            <div class="spot-requirement-card">
+                <h3>Power Outlet Proximity</h3>
+                <p>Since the device uses a 5V power adapter rather than solar panels, your choice of location is strictly limited by the distance to the nearest electrical wall plug.</p>
+                <ul>
+                    <li><strong>Cord Measurement:</strong> Measure the exact length of your 5V power adapter cord before mounting the box. The box must be close enough so the cord sags slightly and is not pulled completely straight.</li>
+                    <li><strong>Outlet Protection:</strong> The wall outlet must be an outdoor-rated, waterproof electrical box with a plastic cover that closes completely over the plugged-in adapter to block rain.</li>
+                    <li><strong>Extension Cords:</strong> Do not use temporary indoor extension cords to bridge the gap. If the cord cannot reach a safe outdoor outlet, pick a new mounting spot entirely.</li>
+                </ul>
+            </div>
+
+            <div class="spot-requirement-card">
+                <h3>Acoustic Path Rules</h3>
+                <p>To collect correct data, the microphone sensor needs an unblocked path to the surrounding air. Sound waves bounce off large objects, which can alter the noise readings.</p>
+                <ul>
+                    <li><strong>Clear Space:</strong> Keep the weather box at least 3 feet away from deep wall corners, large overhanging roof eaves, or thick tree branches.</li>
+                    <li><strong>Avoid Local Noise Sources:</strong> Do not mount the box directly next to air conditioning exhaust fans, spinning wind vents, or vibrating gutters. These objects make local sounds that will ruin your general neighborhood noise tracking numbers.</li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section id="install-mounting" class="install-mounting-section">
+    <div class="container">
+
+        <div class="hardware-detailed-header text-center install-mounting-header">
+            <span class="install-mounting-tag">Step 2</span>
+            <h2 class="install-mounting-title">Attaching the Box to the Wall</h2>
+        </div>
+
+        <div class="mounting-steps-container">
+
+            <div class="mounting-step-block">
+                <h3>1. Fix the Mounting Brackets to the Box</h3>
+                <p>Before climbing up the ladder, you must attach the exterior metal mounting ears to the plastic weather box. This gives you a clear flange to screw through when attaching the system to the wall.</p>
+                <ul>
+                    <li>Flip the weather box over onto its front side so the back face points upward.</li>
+                    <li>Line up the four stainless steel mounting brackets with the factory screw holes on the four corners of the box.</li>
+                    <li>Insert the short machine screws through the brackets and into the box holes. Tighten them fully with a handheld screwdriver so the brackets do not swing or rattle.</li>
+                </ul>
+            </div>
+
+            <div class="mounting-step-block">
+                <h3>2. Mark the Drill Points on the Wall</h3>
+                <p>To keep the box straight and level, mark your exact drill holes directly onto the brick or wood surface first.</p>
+                <ul>
+                    <li>Hold the plastic box up against the wall at your chosen installation spot.</li>
+                    <li>Place a small bubble level on top of the box to ensure it sits perfectly straight. If the box tilts, rain could slide into the microphone hole.</li>
+                    <li>Take a pencil or a thin marker and draw small dots inside the screw loops of the metal brackets onto the wall surface. Set the box back down in a safe spot.</li>
+                </ul>
+            </div>
+
+            <div class="mounting-step-block">
+                <h3>3. Drill Holes and Insert Plastic Anchors</h3>
+                <p>If you are mounting the device onto a hard surface like brick, concrete, or stone, you must use plastic wall anchors to prevent the screws from pulling out under heavy stress.</p>
+                <ul>
+                    <li>Attach a masonry drill bit to your power drill that matches the thickness of your plastic anchors.</li>
+                    <li>Drill a straight hole into each of the marked marks. Push the drill inward until the hole depth matches the full length of the anchor.</li>
+                    <li>Clear any loose dust out of the holes, then push the plastic anchors inside. Use a hammer to tap the anchors lightly until their outer rims sit completely flush against the wall surface.</li>
+                </ul>
+                <div class="step-alert-note">
+                    <p><strong>Note for Wooden Surfaces:</strong> If you are mounting the box onto a soft wooden pole or fence board, you do not need to drill large holes or use plastic anchors. You can drive the mounting screws straight through the brackets into the wood securely.</p>
+                </div>
+            </div>
+
+            <div class="mounting-step-block">
+                <h3>4. Mount and Lock the Box Framework</h3>
+                <p>The final step fastens the device framework permanently to the wall structure using heavy-duty outdoor screws.</p>
+                <ul>
+                    <li>Lift the weather box back into place, matching up the metal brackets with the installed wall anchors.</li>
+                    <li>Insert long outdoor wood or wall screws through the brackets and into the anchors.</li>
+                    <li>Drive the screws inward using your power drill or screwdriver. Tighten them firmly until the metal brackets compress hard against the wall face. Pull gently on the box to confirm it does not shift or wiggle.</li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<footer class="footer-section">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-lg-4 col-12 mb-4 mb-lg-0">
+                <div class="footer-brand mb-4">
+                    <img src="../Media/logo.png" alt="Logo" class="brand-logo mb-3">
+                    <h2 class="brand-title">AcoustiNet</h2>
+                    <p class="brand-subtitle">Smart Urban Acoustic Management</p>
+                </div>
+                <p class="footer-desc">
+                    A project focused on silence in local parks and quiet areas.
+                </p>
+            </div>
+
+            <div class="col-lg-2 col-md-3 col-6 mb-4 mb-md-0">
+                <h5 class="footer-heading">Information</h5>
+                <ul class="footer-links">
+                    <li><a href="../index.html">Homepage</a></li>
+                    <li><a href="topic.html">Our Topic</a></li>
+                    <li><a href="about.html">About Team</a></li>
+                    <li><a href="goals.html">Sustainable Goals</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-2 col-md-3 col-6 mb-4 mb-md-0">
+                <h5 class="footer-heading">Impact</h5>
+                <ul class="footer-links">
+                    <li><a href="human-health.html">Human Health</a></li>
+                    <li><a href="environmental-impact.html">Environmental Impact</a></li>
+                    <li><a href="biodiversity.html">Wildlife & Biodiversity</a></li>
+                    <li><a href="infrastructure.html">Infrastructure Decay</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-2 col-md-3 col-6">
+                <h5 class="footer-heading">Our Plan</h5>
+                <ul class="footer-links">
+                    <li><a href="quiet_zone.html">What is a Quiet Zone?</a></li>
+                    <li><a href="acoustic_management.html">Acoustic Management</a></li>
+                    <li><a href="noise_pollution.html">Noise Pollution</a></li>
+                    <li><a href="solution.html">Our Solution</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-2 col-md-3 col-6">
+                <h5 class="footer-heading">Technology</h5>
+                <ul class="footer-links">
+                    <li><a href="suggested_technology.html">Suggested Technology</a></li>
+                    <li><a href="hardware.html">Hardware Plan</a></li>
+                    <li><a href="installation.html">Device Installation</a></li>
+                    <li><a href="demonstration.html">Demonstration</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom mt-5 pt-4">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="copyright-text m-0">© AcoustiNet &bull; 2026. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end mt-3 mt-md-0">
+                    <ul class="footer-bottom-links list-inline m-0">
+                        <li class="list-inline-item me-4">
+                            <a href="contact.html">Contact Us</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://canva.link/20rhx9a28xyix9p">References</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

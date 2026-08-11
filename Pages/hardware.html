@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hardware Plan - AcoustiNet</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../Media/logo-white.png">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg fixed-top custom-nav">
+    <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="../index.html">
+            <div class="logo-icon-bg me-2">
+                <img src="../Media/logo.png" alt="AcoustiNet Logo" width="35">
+            </div>
+            <div class="brand-text">
+                <h1 class="brand-title">AcoustiNet</h1>
+                <p class="brand-subtitle">Smart Urban Acoustic Management</p>
+            </div>
+        </a>
+
+        <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebarMenu" aria-label="navbar-toggler">
+            <div class="bar"></div>
+            <div class="bar short"></div>
+            <div class="bar"></div>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item dropdown mega-dropdown">
+                    <a class="nav-link">Information</a>
+                    <div class="mega-menu">
+                        <div class="menu-column">
+                            <h6 class="menu-header">Mission & Identity</h6>
+                            <a href="../index.html">Homepage</a>
+                            <a href="topic.html">Our Topic</a>
+                            <a href="about.html">About Team</a>
+                            <a href="goals.html">Sustainable Goals</a>
+                        </div>
+                        <div class="menu-image-cap">
+                            <img src="../Media/forest-img.avif" alt="Urban nature">
+                        </div>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown mega-dropdown">
+                    <a class="nav-link">Impact</a>
+                    <div class="mega-menu">
+                        <div class="menu-column">
+                            <h6 class="menu-header">Health & Environment</h6>
+                            <a href="human-health.html">Human Health</a>
+                            <a href="environmental-impact.html">Environmental Impact</a>
+                            <a href="biodiversity.html">Wildlife & Biodiversity</a>
+                            <a href="infrastructure.html">Infrastructure Decay</a>
+                        </div>
+                        <div class="menu-image-cap">
+                            <img src="../Media/sustainability-img.jpg" alt="Sustainability">
+                        </div>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown mega-dropdown">
+                    <a class="nav-link">Our Plan</a>
+                    <div class="mega-menu">
+                        <div class="menu-column">
+                            <h6 class="menu-header">The Strategy</h6>
+                            <a href="quiet_zone.html">What is a Quiet Zone?</a>
+                            <a href="acoustic_management.html">Acoustic Management</a>
+                            <a href="noise_pollution.html">Noise Pollution</a>
+                            <a href="solution.html">Our Solution</a>
+                        </div>
+                        <div class="menu-image-cap">
+                            <img src="../Media/hardware-img.avif" alt="Hardware">
+                        </div>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown mega-dropdown">
+                    <a class="nav-link">Technology</a>
+                    <div class="mega-menu">
+                        <div class="menu-column">
+                            <h6 class="menu-header">Product</h6>
+                            <a href="suggested_technology.html">Suggested Technology</a>
+                            <a href="hardware.html">Hardware Plan</a>
+                            <a href="installation.html">Device Installation</a>
+                            <a href="demonstration.html">Demonstration</a>
+                        </div>
+                        <div class="menu-image-cap">
+                            <img src="../Media/technology-img.avif" alt="Dashboard">
+                        </div>
+                    </div>
+                </li>
+
+                <li class="nav-item ms-lg-4">
+                    <a class="nav-link btn-login px-4 py-2 text-white" href="contact.html">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="offcanvas offcanvas-end custom-sidebar" tabindex="-1" id="sidebarMenu">
+    <div class="offcanvas-header px-4 border-bottom">
+        <div class="d-flex flex-column">
+            <span class="sidebar-label">AcoustiNet</span>
+            <small class="sidebar-subtitle text-muted tracking-wider text-uppercase">Navigation Portal</small>
+        </div>
+        <button type="button" class="btn-close-sidebar" data-bs-dismiss="offcanvas" aria-label="sidebar-close">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+    </div>
+    
+    <div class="offcanvas-body p-0">
+        <div class="accordion accordion-flush" id="sidebarAccordion">
+            <div class="accordion-item border-0 bg-transparent">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed px-4 py-3 fw-700" type="button" data-bs-toggle="collapse" data-bs-target="#side-info">
+                        Information
+                    </button>
+                </h2>
+                <div id="side-info" class="accordion-collapse collapse" data-bs-parent="#sidebarAccordion">
+                    <div class="accordion-body py-2">
+                        <nav class="d-flex flex-column gap-2 ps-2">
+                            <a href="../index.html" class="sidebar-sublink">Homepage</a>
+                            <a href="topic.html" class="sidebar-sublink">Our Topic</a>
+                            <a href="about.html" class="sidebar-sublink">About Team</a>
+                            <a href="goals.html" class="sidebar-sublink">Sustainable Goals</a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item border-0 bg-transparent">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed px-4 py-3 fw-700" type="button" data-bs-toggle="collapse" data-bs-target="#side-impact">
+                        Impact
+                    </button>
+                </h2>
+                <div id="side-impact" class="accordion-collapse collapse" data-bs-parent="#sidebarAccordion">
+                    <div class="accordion-body py-2">
+                        <nav class="d-flex flex-column gap-2 ps-2">
+                            <a href="human-health.html" class="sidebar-sublink">Human Health</a>
+                            <a href="environmental-impact.html" class="sidebar-sublink">Environmental Impact</a>
+                            <a href="biodiversity.html" class="sidebar-sublink">Wildlife & Biodiversity</a>
+                            <a href="infrastructure.html" class="sidebar-sublink">Infrastructure Decay</a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item border-0 bg-transparent">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed px-4 py-3 fw-700" type="button" data-bs-toggle="collapse" data-bs-target="#side-plan">
+                        Our Plan
+                    </button>
+                </h2>
+                <div id="side-plan" class="accordion-collapse collapse" data-bs-parent="#sidebarAccordion">
+                    <div class="accordion-body py-2">
+                        <nav class="d-flex flex-column gap-2 ps-2">
+                            <a href="quiet_zone.html" class="sidebar-sublink">What is a Quiet Zone?</a>
+                            <a href="acoustic_management.html" class="sidebar-sublink">Acoustic Management</a>
+                            <a href="noise_pollution.html" class="sidebar-sublink">Noise Pollution</a>
+                            <a href="solution.html" class="sidebar-sublink">Our Solution</a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item border-0 bg-transparent">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed px-4 py-3 fw-700" type="button" data-bs-toggle="collapse" data-bs-target="#side-tech">
+                        Technology
+                    </button>
+                </h2>
+                <div id="side-tech" class="accordion-collapse collapse" data-bs-parent="#sidebarAccordion">
+                    <div class="accordion-body py-2">
+                        <nav class="d-flex flex-column gap-2 ps-2">
+                            <a href="suggested_technology.html" class="sidebar-sublink">Suggested Technology</a>
+                            <a href="hardware.html" class="sidebar-sublink">Hardware Plan</a>
+                            <a href="installation.html" class="sidebar-sublink">Device Installation</a>
+                            <a href="demonstration.html" class="sidebar-sublink">Demonstration</a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="sidebar-footer px-4 py-4 mt-auto border-top">
+            <a href="contact.html" class="btn btn-login-sidebar w-100 mb-3">Contact Us</a>
+            <div class="footer-meta text-center small opacity-50">AcoustiNet &bull; 2026</div>
+        </div>
+    </div>
+</div>
+
+<section id="hardware-hero" class="hardware-hero-section">
+    <div class="container">
+        <div class="row align-items-center g-5">
+            
+            <div class="col-lg-6">
+                <span class="hardware-hero-tag">Our Tools</span>
+                <h1 class="hardware-hero-title mb-4">Hardware Plan</h1>
+                <p class="hardware-hero-desc mb-0">
+                    To track city noise accurately, we use simple physical tools built to last. Learn about the physical parts, sound meters, and power tools we select to keep our monitoring setup active and safe in open public spaces.
+                </p>
+            </div>
+            
+            <div class="col-lg-6">
+                <div class="hardware-media-container">
+                    <div class="hardware-media-frame">
+                        <img src="../Media/urban-park-quiet.jpg" alt="Urban quiet space where it can be added">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section id="hardware-main-parts" class="hardware-parts-section">
+    <div class="container">
+
+        <div class="hardware-parts-header text-center">
+            <span class="hardware-parts-tag">The Pieces</span>
+            <h2 class="hardware-parts-title">Main Parts</h2>
+        </div>
+
+        <div class="parts-grid">
+
+            <div class="part-card">
+                <div class="part-icon-frame">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="22"/></svg>
+                </div>
+                <h3 class="part-card-title">Sound Sensor</h3>
+                <p class="part-card-desc">This part listens to the surrounding noise. It turns the physical sound waves into digital numbers that measure loudness levels.</p>
+            </div>
+
+            <div class="part-card">
+                <div class="part-icon-frame">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="16" height="16" x="4" y="4" rx="2"/><rect width="6" height="6" x="9" y="9" rx="1"/><path d="M9 1v3M15 1v3M9 20v3M15 20v3M20 9h3M20 15h3M1 9h3M1 15h3"/></svg>
+                </div>
+                <h3 class="part-card-title">Main Computer Board</h3>
+                <p class="part-card-desc">This is the small brain of the device. It takes the loudness numbers from the sensor, reads them, and sends them to the display screen.</p>
+            </div>
+
+            <div class="part-card">
+                <div class="part-icon-frame">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18.36 6.64a9 9 0 1 1-12.73 0"/><line x1="12" y1="2" x2="12" y2="12"/></svg>
+                </div>
+                <h3 class="part-card-title">5V Power Adapter</h3>
+                <p class="part-card-desc">This plug connects the device to a standard wall outlet. It changes the wall electricity into a safe 5V stream to keep the tools running constantly without batteries.</p>
+            </div>
+
+            <div class="part-card">
+                <div class="part-icon-frame">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/></svg>
+                </div>
+                <h3 class="part-card-title">Weather Box</h3>
+                <p class="part-card-desc">A strong plastic case that holds all the parts safely inside. It keeps the fragile electronic pieces dry from heavy rain and wind.</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section id="hardware-connection-specs" class="hardware-detailed-section">
+    <div class="container">
+
+        <div class="hardware-detailed-header text-center">
+            <h2 class="hardware-detailed-title">Connection Setup & Assembly Steps</h2>
+        </div>
+
+        <div class="tech-spec-container">
+            
+            <div class="tech-spec-block">
+                <h3>Step 1: Wire the Sensor Pins</h3>
+                <p>Use three separate plastic jumper wires to link the sound sensor directly to the main computer board. Push the female wire tips firmly onto the metal pins until they seat completely and do not wiggle loose.</p>
+                
+                <table class="pin-table">
+                    <thead>
+                        <tr>
+                            <th>Sound Sensor Pin Name</th>
+                            <th>Computer Board Pin Name</th>
+                            <th>What This Wire Carries</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><span class="code-inline">VCC</span></td>
+                            <td><span class="code-inline">5V</span></td>
+                            <td>Electricity to turn the sensor on</td>
+                        </tr>
+                        <tr>
+                            <td><span class="code-inline">GND</span></td>
+                            <td><span class="code-inline">GND</span></td>
+                            <td>Ground connection to complete the circuit</td>
+                        </tr>
+                        <tr>
+                            <td><span class="code-inline">OUT</span> (or A0)</td>
+                            <td><span class="code-inline">A0</span></td>
+                            <td>The volume signal numbers sent from the microphone</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="tech-spec-block">
+                <h3>Step 2: Smooth Out the Power Supply</h3>
+                <p>Small variations in electricity can mess up the noise readings. To fix this, add a tiny electronic helper called a capacitor directly between the power and ground lines:</p>
+                <ul>
+                    <li>Take a small <span class="code-inline">0.1µF</span> capacitor and connect its two metal legs directly across the sensor's <span class="code-inline">VCC</span> and <span class="code-inline">GND</span> lines.</li>
+                    <li>This part works like a temporary storage tank that absorbs quick electrical drops, making sure the sensor receives steady, clean power.</li>
+                </ul>
+            </div>
+
+            <div class="tech-spec-block">
+                <h3>Step 3: Thread and Lock the Power Adapter</h3>
+                <p>Do not plug the power adapter into the wall yet. First, you must pass the cord into the weather box correctly to keep rain out:</p>
+                <ul>
+                    <li>Unscrew the round plastic cap on the water-tight grip plug (cable gland) at the bottom of your weather box.</li>
+                    <li>Push the small USB end of the 5V power adapter wire through the outer cap, then through the rubber center ring, and into the box.</li>
+                    <li>Plug the USB end directly into the matching power slot on your computer board.</li>
+                    <li>Screw the outer plastic cap back onto the box hole tightly. The internal rubber ring will squeeze around the wire to block any water drops from following the cord inside.</li>
+                </ul>
+            </div>
+
+            <div class="tech-spec-block">
+                <h3>Step 4: Screw the Boards into the Enclosure</h3>
+                <p>Leaving loose parts inside the box can break the wires when the device is moved or shaken by strong winds. Secure everything down mechanically:</p>
+                <ul>
+                    <li>Align the small holes on the corners of the computer board with the raised plastic pegs inside the weather box.</li>
+                    <li>Use four small metal screws to secure the board tightly down onto the pegs. Do not overtighten, or the plastic board might crack.</li>
+                </ul>
+            </div>
+
+            <div class="tech-spec-block">
+                <h3>Step 5: Mount and Seal the Microphone Tip</h3>
+                <p>The sound sensor needs a clear path to hear the air outside, but the circuit board must stay completely dry.</p>
+                
+                
+                
+                <ul>
+                    <li>Find the round 10mm hole cut into the very bottom face of your weather box.</li>
+                    <li>Push the silver tip of the microphone sensor through this hole from the inside so it points down at the ground. This upside-down position prevents falling rain from collecting inside the microphone frame.</li>
+                </ul>
+                <div class="spec-note">
+                    <p><strong>Important Sealing Rule:</strong> Squeeze a thick ring of waterproof silicone glue around the outside edge of the microphone tip where it meets the plastic box. Let the glue sit and dry for two hours. This creates an airtight seal that blocks damp air and heavy rain from sneaking inside the box gaps.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section id="hardware-testing-setup" class="hardware-testing-section">
+    <div class="container">
+
+        <div class="hardware-testing-header text-center">
+            <span class="hardware-testing-tag">Checking the Tools</span>
+            <h2 class="hardware-testing-title">Testing the Setup</h2>
+        </div>
+
+        <div class="testing-grid">
+
+            <div class="testing-card">
+                <div class="testing-status">
+                    <span class="testing-status-dot"></span>Step 1
+                </div>
+                <h3 class="testing-card-title">Power Check</h3>
+                <p class="testing-card-desc">Plug the device into the wall outlet. Look closely at the small computer board to make sure a tiny red light turns on. This shows electricity is flowing inside.</p>
+            </div>
+
+            <div class="testing-card">
+                <div class="testing-status">
+                    <span class="testing-status-dot"></span>Step 2
+                </div>
+                <h3 class="testing-card-title">Sound Check</h3>
+                <p class="testing-card-desc">Make a loud noise like a clap near the sensor. Watch your main screen to see if the noise numbers go up instantly, then drop back down when it is quiet again.</p>
+            </div>
+
+            <div class="testing-card">
+                <div class="testing-status">
+                    <span class="testing-status-dot"></span>Step 3
+                </div>
+                <h3 class="testing-card-title">Box Check</h3>
+                <p class="testing-card-desc">Close the plastic weather box tightly. Pour a small splash of water on top of the box to confirm no water leaks inside onto the wires and parts.</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section id="hardware-care" class="hardware-care-section">
+    <div class="container">
+
+        <div class="hardware-care-header text-center">
+            <span class="hardware-care-tag">Keeping Tools Working</span>
+            <h2 class="hardware-care-title">Taking Care of the Tools</h2>
+        </div>
+
+        <div class="care-grid">
+
+            <div class="care-card">
+                <h3 class="care-card-title">Cleaning the Box</h3>
+                <p class="care-card-desc">Wipe the outside plastic box with a dry cloth every month. Remove dirt or leaves that cover the bottom sensor hole so it can still hear perfectly.</p>
+            </div>
+
+            <div class="care-card">
+                <h3 class="care-card-title">Checking the Wires</h3>
+                <p class="care-card-desc">Look at the power cord and adapter regularly. Make sure the wires are not bent, cut, or pulled out of the wall outlet tightly.</p>
+            </div>
+
+            <div class="care-card">
+                <h3 class="care-card-title">Replacing Old Parts</h3>
+                <p class="care-card-desc">If the red light on the computer board stops shining or numbers stop changing on the screen, swap the broken piece for a fresh spare part.</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<footer class="footer-section">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-lg-4 col-12 mb-4 mb-lg-0">
+                <div class="footer-brand mb-4">
+                    <img src="../Media/logo.png" alt="Logo" class="brand-logo mb-3">
+                    <h2 class="brand-title">AcoustiNet</h2>
+                    <p class="brand-subtitle">Smart Urban Acoustic Management</p>
+                </div>
+                <p class="footer-desc">
+                    A project focused on silence in local parks and quiet areas.
+                </p>
+            </div>
+
+            <div class="col-lg-2 col-md-3 col-6 mb-4 mb-md-0">
+                <h5 class="footer-heading">Information</h5>
+                <ul class="footer-links">
+                    <li><a href="../index.html">Homepage</a></li>
+                    <li><a href="topic.html">Our Topic</a></li>
+                    <li><a href="about.html">About Team</a></li>
+                    <li><a href="goals.html">Sustainable Goals</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-2 col-md-3 col-6 mb-4 mb-md-0">
+                <h5 class="footer-heading">Impact</h5>
+                <ul class="footer-links">
+                    <li><a href="human-health.html">Human Health</a></li>
+                    <li><a href="environmental-impact.html">Environmental Impact</a></li>
+                    <li><a href="biodiversity.html">Wildlife & Biodiversity</a></li>
+                    <li><a href="infrastructure.html">Infrastructure Decay</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-2 col-md-3 col-6">
+                <h5 class="footer-heading">Our Plan</h5>
+                <ul class="footer-links">
+                    <li><a href="quiet_zone.html">What is a Quiet Zone?</a></li>
+                    <li><a href="acoustic_management.html">Acoustic Management</a></li>
+                    <li><a href="noise_pollution.html">Noise Pollution</a></li>
+                    <li><a href="solution.html">Our Solution</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-2 col-md-3 col-6">
+                <h5 class="footer-heading">Technology</h5>
+                <ul class="footer-links">
+                    <li><a href="suggested_technology.html">Suggested Technology</a></li>
+                    <li><a href="hardware.html">Hardware Plan</a></li>
+                    <li><a href="installation.html">Device Installation</a></li>
+                    <li><a href="demonstration.html">Demonstration</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom mt-5 pt-4">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="copyright-text m-0">© AcoustiNet &bull; 2026. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end mt-3 mt-md-0">
+                    <ul class="footer-bottom-links list-inline m-0">
+                        <li class="list-inline-item me-4">
+                            <a href="contact.html">Contact Us</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://canva.link/20rhx9a28xyix9p">References</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

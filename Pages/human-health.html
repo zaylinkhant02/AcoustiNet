@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Human Health - AcoustiNet</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../Media/logo-white.png">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg fixed-top custom-nav">
+    <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="../index.html">
+            <div class="logo-icon-bg me-2">
+                <img src="../Media/logo.png" alt="AcoustiNet Logo" width="35">
+            </div>
+            <div class="brand-text">
+                <h1 class="brand-title">AcoustiNet</h1>
+                <p class="brand-subtitle">Smart Urban Acoustic Management</p>
+            </div>
+        </a>
+
+        <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebarMenu" aria-label="navbar-toggler">
+            <div class="bar"></div>
+            <div class="bar short"></div>
+            <div class="bar"></div>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item dropdown mega-dropdown">
+                    <a class="nav-link">Information</a>
+                    <div class="mega-menu">
+                        <div class="menu-column">
+                            <h6 class="menu-header">Mission & Identity</h6>
+                            <a href="../index.html">Homepage</a>
+                            <a href="topic.html">Our Topic</a>
+                            <a href="about.html">About Team</a>
+                            <a href="goals.html">Sustainable Goals</a>
+                        </div>
+                        <div class="menu-image-cap">
+                            <img src="../Media/forest-img.avif" alt="Urban nature">
+                        </div>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown mega-dropdown">
+                    <a class="nav-link">Impact</a>
+                    <div class="mega-menu">
+                        <div class="menu-column">
+                            <h6 class="menu-header">Health & Environment</h6>
+                            <a href="human-health.html">Human Health</a>
+                            <a href="environmental-impact.html">Environmental Impact</a>
+                            <a href="biodiversity.html">Wildlife & Biodiversity</a>
+                            <a href="infrastructure.html">Infrastructure Decay</a>
+                        </div>
+                        <div class="menu-image-cap">
+                            <img src="../Media/sustainability-img.jpg" alt="Sustainability">
+                        </div>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown mega-dropdown">
+                    <a class="nav-link">Our Plan</a>
+                    <div class="mega-menu">
+                        <div class="menu-column">
+                            <h6 class="menu-header">The Strategy</h6>
+                            <a href="quiet_zone.html">What is a Quiet Zone?</a>
+                            <a href="acoustic_management.html">Acoustic Management</a>
+                            <a href="noise_pollution.html">Noise Pollution</a>
+                            <a href="solution.html">Our Solution</a>
+                        </div>
+                        <div class="menu-image-cap">
+                            <img src="../Media/hardware-img.avif" alt="Hardware">
+                        </div>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown mega-dropdown">
+                    <a class="nav-link">Technology</a>
+                    <div class="mega-menu">
+                        <div class="menu-column">
+                            <h6 class="menu-header">Product</h6>
+                            <a href="suggested_technology.html">Suggested Technology</a>
+                            <a href="hardware.html">Hardware Plan</a>
+                            <a href="installation.html">Device Installation</a>
+                            <a href="demonstration.html">Demonstration</a>
+                        </div>
+                        <div class="menu-image-cap">
+                            <img src="../Media/technology-img.avif" alt="Dashboard">
+                        </div>
+                    </div>
+                </li>
+
+                <li class="nav-item ms-lg-4">
+                    <a class="nav-link btn-login px-4 py-2 text-white" href="contact.html">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="offcanvas offcanvas-end custom-sidebar" tabindex="-1" id="sidebarMenu">
+    <div class="offcanvas-header px-4 border-bottom">
+        <div class="d-flex flex-column">
+            <span class="sidebar-label">AcoustiNet</span>
+            <small class="sidebar-subtitle text-muted tracking-wider text-uppercase">Navigation Portal</small>
+        </div>
+        <button type="button" class="btn-close-sidebar" data-bs-dismiss="offcanvas" aria-label="sidebar-close">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+    </div>
+    
+    <div class="offcanvas-body p-0">
+        <div class="accordion accordion-flush" id="sidebarAccordion">
+            <div class="accordion-item border-0 bg-transparent">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed px-4 py-3 fw-700" type="button" data-bs-toggle="collapse" data-bs-target="#side-info">
+                        Information
+                    </button>
+                </h2>
+                <div id="side-info" class="accordion-collapse collapse" data-bs-parent="#sidebarAccordion">
+                    <div class="accordion-body py-2">
+                        <nav class="d-flex flex-column gap-2 ps-2">
+                            <a href="../index.html" class="sidebar-sublink">Homepage</a>
+                            <a href="topic.html" class="sidebar-sublink">Our Topic</a>
+                            <a href="about.html" class="sidebar-sublink">About Team</a>
+                            <a href="goals.html" class="sidebar-sublink">Sustainable Goals</a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item border-0 bg-transparent">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed px-4 py-3 fw-700" type="button" data-bs-toggle="collapse" data-bs-target="#side-impact">
+                        Impact
+                    </button>
+                </h2>
+                <div id="side-impact" class="accordion-collapse collapse" data-bs-parent="#sidebarAccordion">
+                    <div class="accordion-body py-2">
+                        <nav class="d-flex flex-column gap-2 ps-2">
+                            <a href="human-health.html" class="sidebar-sublink">Human Health</a>
+                            <a href="environmental-impact.html" class="sidebar-sublink">Environmental Impact</a>
+                            <a href="biodiversity.html" class="sidebar-sublink">Wildlife & Biodiversity</a>
+                            <a href="infrastructure.html" class="sidebar-sublink">Infrastructure Decay</a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item border-0 bg-transparent">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed px-4 py-3 fw-700" type="button" data-bs-toggle="collapse" data-bs-target="#side-plan">
+                        Our Plan
+                    </button>
+                </h2>
+                <div id="side-plan" class="accordion-collapse collapse" data-bs-parent="#sidebarAccordion">
+                    <div class="accordion-body py-2">
+                        <nav class="d-flex flex-column gap-2 ps-2">
+                            <a href="quiet_zone.html" class="sidebar-sublink">What is a Quiet Zone?</a>
+                            <a href="acoustic_management.html" class="sidebar-sublink">Acoustic Management</a>
+                            <a href="noise_pollution.html" class="sidebar-sublink">Noise Pollution</a>
+                            <a href="solution.html" class="sidebar-sublink">Our Solution</a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item border-0 bg-transparent">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed px-4 py-3 fw-700" type="button" data-bs-toggle="collapse" data-bs-target="#side-tech">
+                        Technology
+                    </button>
+                </h2>
+                <div id="side-tech" class="accordion-collapse collapse" data-bs-parent="#sidebarAccordion">
+                    <div class="accordion-body py-2">
+                        <nav class="d-flex flex-column gap-2 ps-2">
+                            <a href="suggested_technology.html" class="sidebar-sublink">Suggested Technology</a>
+                            <a href="hardware.html" class="sidebar-sublink">Hardware Plan</a>
+                            <a href="installation.html" class="sidebar-sublink">Device Installation</a>
+                            <a href="demonstration.html" class="sidebar-sublink">Demonstration</a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="sidebar-footer px-4 py-4 mt-auto border-top">
+            <a href="contact.html" class="btn btn-login-sidebar w-100 mb-3">Contact Us</a>
+            <div class="footer-meta text-center small opacity-50">AcoustiNet &bull; 2026</div>
+        </div>
+    </div>
+</div>
+
+<section class="health-hero">
+    <div class="container">
+        <div class="row align-items-center g-5">
+            <div class="col-lg-6">
+                <div class="research-badge mb-4">
+                    <span class="pulse-icon"></span>
+                    Urban Acoustic Research 2026
+                </div>
+                <h1 class="display-4 fw-800 color-onyx mb-4">Acoustic Stress in <span class="text-pine-teal">Yangon's Core</span></h1>
+                <p class="lead text-muted mb-3">
+                    Recent acoustic surveys in Yangon indicate that daytime noise levels in mixed-use townships often fluctuate between 75 dB and 85 dB.
+                </p>
+                <p class="lead text-muted mb-5">
+                    This exceeds the World Health Organization’s recommended 53 dB threshold, leading to documented increases in cortisol levels and hypertension among residents in high-density corridors like Pyay Road and Kabar Aye Pagoda Road.
+                </p>
+                <div class="d-flex flex-wrap gap-3">
+                    <div class="stat-pill-light">
+                        <span class="stat-val">82 dB</span>
+                        <span class="stat-lab">Avg. Roadside Noise</span>
+                    </div>
+                    <div class="stat-pill-light">
+                        <span class="stat-val">>53 dB</span>
+                        <span class="stat-lab">WHO Threshold</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="hero-image-container">
+                    <img src="../Media/yangon-traffic.jpg" alt="Yangon Traffic Infrastructure" class="img-fluid rounded-5 shadow-2xl">
+                    <div class="floating-data-card p-4 rounded-4 shadow">
+                        <h6 class="fw-700 mb-2">Primary Stressor</h6>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="small text-muted">Traffic Decibels</span>
+                            <span class="badge rounded-pill bg-danger">High Risk</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="health-details-section py-5">
+    <div class="container py-lg-5">
+        <div class="row mb-5 text-center justify-content-center">
+            <div class="col-lg-8">
+                <h2 class="display-5 fw-800 color-onyx mb-3">Physiological Consequences of Chronic Exposure</h2>
+                <p class="text-muted fs-5">Prolonged exposure to ambient noise levels above safe thresholds creates measurable systemic risks across multiple bodily functions</p>
+            </div>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="health-impact-card p-5 h-100 rounded-5">
+                    <div class="impact-icon-wrapper mb-4">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                    </div>
+                    <h4 class="fw-700 mb-3 color-onyx">Cardiovascular Strain</h4>
+                    <p class="text-muted small mb-0">Continuous exposure to traffic sounds triggers the sympathetic nervous system raising blood pressure and expanding long term myocardial infarction risks among urban commuters</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="health-impact-card p-5 h-100 rounded-5">
+                    <div class="impact-icon-wrapper mb-4">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                    </div>
+                    <h4 class="fw-700 mb-3 color-onyx">Sleep Fragmentation</h4>
+                    <p class="text-muted small mb-0">Ambient baseline sounds tracking above forty decibels prevent deep REM cycles accelerating daytime fatigue alongside cognitive deficits across residential zones</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="health-impact-card p-5 h-100 rounded-5">
+                    <div class="impact-icon-wrapper mb-4">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10v6M6 6v12M18 6v12M10 4v16M14 4v16"/></svg>
+                    </div>
+                    <h4 class="fw-700 mb-3 color-onyx">Cognitive Development</h4>
+                    <p class="text-muted small mb-0">High amplitude noise corridors impair concentration retention and reading comprehension development among school age cohorts situated near primary intersections</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="noise-comparison-section py-5">
+    <div class="container py-lg-5">
+        <div class="row align-items-center g-5">
+            <div class="col-lg-6">
+                <span class="badge bg-success mb-3 px-3 py-2 rounded-pill">Health Data</span>
+                <h2 class="display-6 fw-bold color-onyx mb-4">Understanding Safe and Dangerous Sound Levels</h2>
+                <p class="text-muted mb-4">
+                    Loud city noises do more than just hurt your ears. According to guidelines from the <strong>World Health Organization (WHO, 2018)</strong>, living near constant street noise higher than 53 decibels can raise your body's stress, cause high blood pressure, and ruin your sleep.
+                </p>
+                <blockquote class="blockquote border-start border-4 border-success ps-3 my-4">
+                    <p class="small text-muted mb-0">
+                        "A verified medical study on community health in the Yangon Region (Thamine Research, 2020) showed that 66.4% of people who work or live near loud sounds at or above 85 decibels suffer from long-term hearing issues and high stress levels."
+                    </p>
+                </blockquote>
+                <p class="text-muted mb-0">
+                    To keep families safe, comparing these verified medical safety limits directly with the real sound levels measured on our neighborhood roads every day would also help.
+                </p>
+            </div>
+            <div class="col-lg-6">
+                <div class="table-responsive bg-white p-4 rounded-4 border shadow-sm">
+                    <table class="table align-middle mb-0">
+                        <thead>
+                            <tr class="text-secondary small text-uppercase">
+                                <th>Environment / Source</th>
+                                <th class="text-center">Decibel Level</th>
+                                <th class="text-end">Safety Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <span class="fw-bold d-block color-onyx">WHO Safe Limit</span>
+                                    <small class="text-muted">Recommended health limit</small>
+                                </td>
+                                <td class="text-center fw-bold text-success">53 dB</td>
+                                <td class="text-end"><span class="badge bg-success-subtle text-success border border-success-subtle px-2 py-1 rounded">Safe Level</span></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="fw-bold d-block color-onyx">Yangon Local Parks</span>
+                                    <small class="text-muted">Goal for quiet public zones</small>
+                                </td>
+                                <td class="text-center fw-bold text-info">55 - 60 dB</td>
+                                <td class="text-end"><span class="badge bg-info-subtle text-info border border-info-subtle px-2 py-1 rounded">Low Risk</span></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="fw-bold d-block color-onyx">Main Traffic Roads</span>
+                                    <small class="text-muted">Average daily street traffic</small>
+                                </td>
+                                <td class="text-center fw-bold text-warning">75 - 82 dB</td>
+                                <td class="text-end"><span class="badge bg-warning-subtle text-warning border border-warning-subtle px-2 py-1 rounded">High Stress</span></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="fw-bold d-block color-onyx">Heavy Intersections</span>
+                                    <small class="text-muted">Peak rush hours and horn use</small>
+                                </td>
+                                <td class="text-center fw-bold text-danger">85+ dB</td>
+                                <td class="text-end"><span class="badge bg-danger-subtle text-danger border border-danger-subtle px-2 py-1 rounded">Harmful Noise</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="medical-research-section py-5">
+    <div class="container py-lg-5">
+        <div class="row align-items-center g-5">
+            <div class="col-lg-6 order-2 order-lg-1">
+                <div class="research-image-wrapper position-relative">
+                    <img src="../Media/medical-img.avif" alt="Medical health tracking and research" class="img-fluid rounded-5 shadow-lg">
+                    <div class="research-badge-floating p-3 rounded-4 shadow bg-white border position-absolute bottom-0 start-0 m-4">
+                        <span class="fw-bold text-danger d-block">25.7%</span>
+                        <small class="text-muted">Hearing Loss Rate</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 order-1 order-lg-2">
+                <span class="badge bg-danger mb-3 px-3 py-2 rounded-pill">Local Medical Case Study</span>
+                <h2 class="display-6 fw-bold color-onyx mb-4">Real Medical Proof from the Yangon Region</h2>
+                <p class="text-muted mb-4">
+                    A verified medical study done at the Thamine textile mill in Yangon looked closely at how loud daily sounds change the human body. The facts show that living or working near heavy noise hurts more than just your ears.
+                </p>
+                
+                <div class="research-facts-list">
+                    <div class="d-flex align-items-start mb-3">
+                        <div class="fact-number-icon me-3 bg-danger-subtle text-danger rounded-circle d-flex align-items-center justify-content-centerfw-bold">1</div>
+                        <div>
+                            <h5 class="fw-bold color-onyx mb-1">High Daily Exposure</h5>
+                            <p class="text-muted small mb-0">The study found that 66.4% of workers in the sampled weaving sections were exposed to ≥85 dB(A) noise levels during work exposure</p>
+                        </div>
+                    </div>
+                    
+                    <div class="d-flex align-items-start mb-3">
+                        <div class="fact-number-icon me-3 bg-danger-subtle text-danger rounded-circle d-flex align-items-center justify-content-center fw-bold">2</div>
+                        <div>
+                            <h5 class="fw-bold color-onyx mb-1">Permanent Hearing Loss</h5>
+                            <p class="text-muted small mb-0">Over 1 in 4 people (25.7%) tested in these noisy settings suffered from lasting hearing damage.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="d-flex align-items-start">
+                        <div class="fact-number-icon me-3 bg-danger-subtle text-danger rounded-circle d-flex align-items-center justify-content-center fw-bold">3</div>
+                        <div>
+                            <h5 class="fw-bold color-onyx mb-1">Ringing Ears & High Blood Pressure</h5>
+                            <p class="text-muted small mb-0">People exposed to these loud sounds showed much higher rates of painful ear ringing (tinnitus) and chronic high blood pressure.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer-section">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-lg-4 col-12 mb-4 mb-lg-0">
+                <div class="footer-brand mb-4">
+                    <img src="../Media/logo.png" alt="Logo" class="brand-logo mb-3">
+                    <h2 class="brand-title">AcoustiNet</h2>
+                    <p class="brand-subtitle">Smart Urban Acoustic Management</p>
+                </div>
+                <p class="footer-desc">
+                    A project focused on silence in local parks and quiet areas.
+                </p>
+            </div>
+
+            <div class="col-lg-2 col-md-3 col-6 mb-4 mb-md-0">
+                <h5 class="footer-heading">Information</h5>
+                <ul class="footer-links">
+                    <li><a href="../index.html">Homepage</a></li>
+                    <li><a href="topic.html">Our Topic</a></li>
+                    <li><a href="about.html">About Team</a></li>
+                    <li><a href="goals.html">Sustainable Goals</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-2 col-md-3 col-6 mb-4 mb-md-0">
+                <h5 class="footer-heading">Impact</h5>
+                <ul class="footer-links">
+                    <li><a href="human-health.html">Human Health</a></li>
+                    <li><a href="environmental-impact.html">Environmental Impact</a></li>
+                    <li><a href="biodiversity.html">Wildlife & Biodiversity</a></li>
+                    <li><a href="infrastructure.html">Infrastructure Decay</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-2 col-md-3 col-6">
+                <h5 class="footer-heading">Our Plan</h5>
+                <ul class="footer-links">
+                    <li><a href="quiet_zone.html">What is a Quiet Zone?</a></li>
+                    <li><a href="acoustic_management.html">Acoustic Management</a></li>
+                    <li><a href="noise_pollution.html">Noise Pollution</a></li>
+                    <li><a href="solution.html">Our Solution</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-2 col-md-3 col-6">
+                <h5 class="footer-heading">Technology</h5>
+                <ul class="footer-links">
+                    <li><a href="suggested_technology.html">Suggested Technology</a></li>
+                    <li><a href="hardware.html">Hardware Plan</a></li>
+                    <li><a href="installation.html">Device Installation</a></li>
+                    <li><a href="demonstration.html">Demonstration</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom mt-5 pt-4">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="copyright-text m-0">© AcoustiNet &bull; 2026. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end mt-3 mt-md-0">
+                    <ul class="footer-bottom-links list-inline m-0">
+                        <li class="list-inline-item me-4">
+                            <a href="contact.html">Contact Us</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://canva.link/20rhx9a28xyix9p">References</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

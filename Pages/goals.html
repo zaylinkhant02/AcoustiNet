@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sustainable Goals - AcoustiNet</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../Media/logo-white.png">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg fixed-top custom-nav">
+    <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="../index.html">
+            <div class="logo-icon-bg me-2">
+                <img src="../Media/logo.png" alt="AcoustiNet Logo" width="35">
+            </div>
+            <div class="brand-text">
+                <h1 class="brand-title">AcoustiNet</h1>
+                <p class="brand-subtitle">Smart Urban Acoustic Management</p>
+            </div>
+        </a>
+
+        <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebarMenu" aria-label="navbar-toggler">
+            <div class="bar"></div>
+            <div class="bar short"></div>
+            <div class="bar"></div>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item dropdown mega-dropdown">
+                    <a class="nav-link">Information</a>
+                    <div class="mega-menu">
+                        <div class="menu-column">
+                            <h6 class="menu-header">Mission & Identity</h6>
+                            <a href="../index.html">Homepage</a>
+                            <a href="topic.html">Our Topic</a>
+                            <a href="about.html">About Team</a>
+                            <a href="goals.html">Sustainable Goals</a>
+                        </div>
+                        <div class="menu-image-cap">
+                            <img src="../Media/forest-img.avif" alt="Urban nature">
+                        </div>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown mega-dropdown">
+                    <a class="nav-link">Impact</a>
+                    <div class="mega-menu">
+                        <div class="menu-column">
+                            <h6 class="menu-header">Health & Environment</h6>
+                            <a href="human-health.html">Human Health</a>
+                            <a href="environmental-impact.html">Environmental Impact</a>
+                            <a href="biodiversity.html">Wildlife & Biodiversity</a>
+                            <a href="infrastructure.html">Infrastructure Decay</a>
+                        </div>
+                        <div class="menu-image-cap">
+                            <img src="../Media/sustainability-img.jpg" alt="Sustainability">
+                        </div>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown mega-dropdown">
+                    <a class="nav-link">Our Plan</a>
+                    <div class="mega-menu">
+                        <div class="menu-column">
+                            <h6 class="menu-header">The Strategy</h6>
+                            <a href="quiet_zone.html">What is a Quiet Zone?</a>
+                            <a href="acoustic_management.html">Acoustic Management</a>
+                            <a href="noise_pollution.html">Noise Pollution</a>
+                            <a href="solution.html">Our Solution</a>
+                        </div>
+                        <div class="menu-image-cap">
+                            <img src="../Media/hardware-img.avif" alt="Hardware">
+                        </div>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown mega-dropdown">
+                    <a class="nav-link">Technology</a>
+                    <div class="mega-menu">
+                        <div class="menu-column">
+                            <h6 class="menu-header">Product</h6>
+                            <a href="suggested_technology.html">Suggested Technology</a>
+                            <a href="hardware.html">Hardware Plan</a>
+                            <a href="installation.html">Device Installation</a>
+                            <a href="demonstration.html">Demonstration</a>
+                        </div>
+                        <div class="menu-image-cap">
+                            <img src="../Media/technology-img.avif" alt="Dashboard">
+                        </div>
+                    </div>
+                </li>
+
+                <li class="nav-item ms-lg-4">
+                    <a class="nav-link btn-login px-4 py-2 text-white" href="contact.html">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="offcanvas offcanvas-end custom-sidebar" tabindex="-1" id="sidebarMenu">
+    <div class="offcanvas-header px-4 border-bottom">
+        <div class="d-flex flex-column">
+            <span class="sidebar-label">AcoustiNet</span>
+            <small class="sidebar-subtitle text-muted tracking-wider text-uppercase">Navigation Portal</small>
+        </div>
+        <button type="button" class="btn-close-sidebar" data-bs-dismiss="offcanvas" aria-label="sidebar-close">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+    </div>
+    
+    <div class="offcanvas-body p-0">
+        <div class="accordion accordion-flush" id="sidebarAccordion">
+            <div class="accordion-item border-0 bg-transparent">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed px-4 py-3 fw-700" type="button" data-bs-toggle="collapse" data-bs-target="#side-info">
+                        Information
+                    </button>
+                </h2>
+                <div id="side-info" class="accordion-collapse collapse" data-bs-parent="#sidebarAccordion">
+                    <div class="accordion-body py-2">
+                        <nav class="d-flex flex-column gap-2 ps-2">
+                            <a href="../index.html" class="sidebar-sublink">Homepage</a>
+                            <a href="topic.html" class="sidebar-sublink">Our Topic</a>
+                            <a href="about.html" class="sidebar-sublink">About Team</a>
+                            <a href="goals.html" class="sidebar-sublink">Sustainable Goals</a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item border-0 bg-transparent">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed px-4 py-3 fw-700" type="button" data-bs-toggle="collapse" data-bs-target="#side-impact">
+                        Impact
+                    </button>
+                </h2>
+                <div id="side-impact" class="accordion-collapse collapse" data-bs-parent="#sidebarAccordion">
+                    <div class="accordion-body py-2">
+                        <nav class="d-flex flex-column gap-2 ps-2">
+                            <a href="human-health.html" class="sidebar-sublink">Human Health</a>
+                            <a href="environmental-impact.html" class="sidebar-sublink">Environmental Impact</a>
+                            <a href="biodiversity.html" class="sidebar-sublink">Wildlife & Biodiversity</a>
+                            <a href="infrastructure.html" class="sidebar-sublink">Infrastructure Decay</a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item border-0 bg-transparent">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed px-4 py-3 fw-700" type="button" data-bs-toggle="collapse" data-bs-target="#side-plan">
+                        Our Plan
+                    </button>
+                </h2>
+                <div id="side-plan" class="accordion-collapse collapse" data-bs-parent="#sidebarAccordion">
+                    <div class="accordion-body py-2">
+                        <nav class="d-flex flex-column gap-2 ps-2">
+                            <a href="quiet_zone.html" class="sidebar-sublink">What is a Quiet Zone?</a>
+                            <a href="acoustic_management.html" class="sidebar-sublink">Acoustic Management</a>
+                            <a href="noise_pollution.html" class="sidebar-sublink">Noise Pollution</a>
+                            <a href="solution.html" class="sidebar-sublink">Our Solution</a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item border-0 bg-transparent">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed px-4 py-3 fw-700" type="button" data-bs-toggle="collapse" data-bs-target="#side-tech">
+                        Technology
+                    </button>
+                </h2>
+                <div id="side-tech" class="accordion-collapse collapse" data-bs-parent="#sidebarAccordion">
+                    <div class="accordion-body py-2">
+                        <nav class="d-flex flex-column gap-2 ps-2">
+                            <a href="suggested_technology.html" class="sidebar-sublink">Suggested Technology</a>
+                            <a href="hardware.html" class="sidebar-sublink">Hardware Plan</a>
+                            <a href="installation.html" class="sidebar-sublink">Device Installation</a>
+                            <a href="demonstration.html" class="sidebar-sublink">Demonstration</a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="sidebar-footer px-4 py-4 mt-auto border-top">
+            <a href="contact.html" class="btn btn-login-sidebar w-100 mb-3">Contact Us</a>
+            <div class="footer-meta text-center small opacity-50">AcoustiNet &bull; 2026</div>
+        </div>
+    </div>
+</div>
+
+<header class="sdg-hero-wrap">
+    <div class="sdg-bg-overlay">
+        <img src="../Media/city-urban.avif" alt="Peaceful urban environment" class="bg-image">
+    </div>
+    
+    <div class="container h-100 d-flex align-items-center justify-content-center">
+        <div class="row justify-content-center w-100">
+            <div class="col-lg-9 col-xl-8">
+                <div class="sdg-glass-card p-4 p-md-5 text-center">
+                    <div class="sdg-badge-top mb-4">
+                        <img src="../Media/sdg-3.png" alt="SDG 3 Icon" class="sdg-icon-img">
+                        <span class="d-block mt-2 fw-800 text-white tracking-widest text-uppercase">United Nations SDG 3</span>
+                    </div>
+
+                    <h1 class="display-3 fw-800 text-white mb-3">
+                        Health is <span class="text-success-bright">Quiet</span>
+                    </h1>
+                    
+                    <p class="lead text-white-50 mb-5 px-lg-5">
+                        Noise pollution is the second largest environmental cause of health problems, just after air quality. AcoustiNet spreads awareness about <strong>SDG 3: Good Health and Well-being</strong>.
+                    </p>
+
+                    <div class="row g-3 justify-content-center">
+                        <div class="col-sm-auto">
+                            <div class="stat-pill-light">
+                                <span class="text-onyx h3 fw-bold mb-0">53dB</span>
+                                <p class="text-onyx mb-0">WHO Health-Safe Limit</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-auto">
+                            <div class="stat-pill-light">
+                                <span class="text-onyx h3 fw-bold mb-0">45dB</span>
+                                <p class="text-onyx mb-0">Sleep Protection Standard</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section class="py-5 bg-white">
+    <div class="container py-lg-5">
+        <div class="row g-5 align-items-center">
+            
+            <div class="col-lg-7">
+                <h2 class="display-5 fw-800 text-onyx mb-4">SDG 3: <span class="text-success">Prevention & Wellbeing</span></h2>
+                <p class="lead text-muted mb-5">
+                    AcoustiNet aligns with <strong>Target 3.4</strong> of the UN Sustainable Development Goals, focusing on the reduction of environmental stressors that contribute to non-communicable diseases. Specifically, we aim for SDG 3.4.1.
+                </p>
+
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="h-100 p-4 rounded-4 bg-light border-start border-4 border-success">
+                            <h6 class="fw-bold text-onyx">Cardiovascular Protection</h6>
+                            <p class="small text-muted mb-0">
+                                Reducing road traffic noise to meet the WHO guideline to mitigate long-term risks of hypertension.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="h-100 p-4 rounded-4 bg-light border-start border-4 border-success">
+                            <h6 class="fw-bold text-onyx">Sleep Disturbance Mitigation</h6>
+                            <p class="small text-muted mb-0">
+                                Targeting the WHO night-noise limit to prevent chronic sleep fragmentation and metabolic stress.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-5">
+                <div class="position-relative">
+                    <img src="../Media/management-img.jpg" alt="Acoustic management in residential areas" class="img-fluid rounded-5 shadow-lg">
+                    <div class="position-absolute bottom-0 end-0 m-3 bg-white px-3 py-2 rounded-3 shadow-sm border">
+                        <span class="x-small fw-bold text-muted">TARGET SDG 3.4.1</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-5 bg-white">
+    <div class="container py-lg-5">
+        <div class="row align-items-center g-5">
+            
+            <div class="col-lg-5">
+                <div class="p-2 rounded-5 border shadow-sm">
+                    <img src="../Media/urban-quiet-space.jpg" alt="Visualizing quiet urban spaces" class="img-fluid rounded-5">
+                </div>
+            </div>
+
+            <div class="col-lg-7">
+                <h2 class="fw-bold text-dark mb-4">Designing for <span class="text-success">Better Living</span></h2>
+                <p class="text-muted mb-4">
+                    Our project proposes a new way to look at our streets. Instead of just accepting noise as part of city life, we use the <strong>SDG 3 framework</strong> to show how calmer environments can improve daily well-being for everyone.
+                </p>
+
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="p-3 rounded-4 bg-light">
+                            <h6 class="fw-bold mb-2 text-success">Raising Awareness</h6>
+                            <p class="small text-muted mb-0">We want to help people understand that quiet isn't just a luxury; it's a necessary part of staying healthy and reducing stress.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="p-3 rounded-4 bg-light">
+                            <h6 class="fw-bold mb-2 text-success">Better Urban Habits</h6>
+                            <p class="small text-muted mb-0">We suggest how small changes in traffic or landscape design can create peace in busy neighborhoods.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-5 p-4 border-start border-success border-4 bg-light rounded-trailing-4">
+                    <p class="mb-0 text-dark">
+                        "The goal of this project is to prove that smart urban planning can be a tool for preventive health, making cities more liveable for the next generation."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-5 bg-light">
+    <div class="container py-lg-5">
+        <div class="row align-items-center g-5">
+            
+            <div class="col-lg-7">
+                <h2 class="fw-bold text-dark mb-4">A Scalable <span class="text-success">Framework</span></h2>
+                <p class="text-muted mb-5">
+                    Our proposal is designed to be adaptable. While we focus on specific urban areas for our project, the methods we use to identify and protect soundscapes can be applied to any neighborhood looking to improve public health.
+                </p>
+
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="h-100 p-4 bg-white rounded-4 shadow-sm">
+                            <div class="mb-3 text-success">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                            </div>
+                            <h6 class="fw-bold mb-2">Community Ownership</h6>
+                            <p class="small text-muted mb-0">The project encourages local residents to participate in identifying the quiet areas they value most, ensuring the design meets actual community needs.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="h-100 p-4 bg-white rounded-4 shadow-sm">
+                            <div class="mb-3 text-success">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+                            </div>
+                            <h6 class="fw-bold mb-2">Future Integration</h6>
+                            <p class="small text-muted mb-0">Our sustainable goal is for this project to help serve as useful information for future city planners to integrate acoustic health into standard urban infrastructure projects.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-5">
+                <div class="position-relative">
+                    <img src="../Media/sustainable-urban-img.jpg" alt="Sustainable urban planning" class="img-fluid rounded-5 shadow-sm border">
+                    <div class="position-absolute top-0 end-0 m-3 p-3 bg-success text-white rounded-4 shadow-lg">
+                        <span class="d-block h5 fw-bold mb-0">Sustainable</span>
+                        <p class="x-small mb-0">& Adaptable</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<footer class="footer-section">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-lg-4 col-12 mb-4 mb-lg-0">
+                <div class="footer-brand mb-4">
+                    <img src="../Media/logo.png" alt="Logo" class="brand-logo mb-3">
+                    <h2 class="brand-title">AcoustiNet</h2>
+                    <p class="brand-subtitle">Smart Urban Acoustic Management</p>
+                </div>
+                <p class="footer-desc">
+                    A project focused on silence in local parks and quiet areas.
+                </p>
+            </div>
+
+            <div class="col-lg-2 col-md-3 col-6 mb-4 mb-md-0">
+                <h5 class="footer-heading">Information</h5>
+                <ul class="footer-links">
+                    <li><a href="../index.html">Homepage</a></li>
+                    <li><a href="topic.html">Our Topic</a></li>
+                    <li><a href="about.html">About Team</a></li>
+                    <li><a href="goals.html">Sustainable Goals</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-2 col-md-3 col-6 mb-4 mb-md-0">
+                <h5 class="footer-heading">Impact</h5>
+                <ul class="footer-links">
+                    <li><a href="human-health.html">Human Health</a></li>
+                    <li><a href="environmental-impact.html">Environmental Impact</a></li>
+                    <li><a href="biodiversity.html">Wildlife & Biodiversity</a></li>
+                    <li><a href="infrastructure.html">Infrastructure Decay</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-2 col-md-3 col-6">
+                <h5 class="footer-heading">Our Plan</h5>
+                <ul class="footer-links">
+                    <li><a href="quiet_zone.html">What is a Quiet Zone?</a></li>
+                    <li><a href="acoustic_management.html">Acoustic Management</a></li>
+                    <li><a href="noise_pollution.html">Noise Pollution</a></li>
+                    <li><a href="solution.html">Our Solution</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-2 col-md-3 col-6">
+                <h5 class="footer-heading">Technology</h5>
+                <ul class="footer-links">
+                    <li><a href="suggested_technology.html">Suggested Technology</a></li>
+                    <li><a href="hardware.html">Hardware Plan</a></li>
+                    <li><a href="installation.html">Device Installation</a></li>
+                    <li><a href="demonstration.html">Demonstration</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom mt-5 pt-4">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="copyright-text m-0">© AcoustiNet &bull; 2026. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end mt-3 mt-md-0">
+                    <ul class="footer-bottom-links list-inline m-0">
+                        <li class="list-inline-item me-4">
+                            <a href="contact.html">Contact Us</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://canva.link/20rhx9a28xyix9p">References</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
