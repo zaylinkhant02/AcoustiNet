@@ -12,7 +12,7 @@ A multi-page website exploring urban noise pollution, its impact on human health
 
 AcoustiNet is an educational website designed to raise awareness about urban noise pollution. The project explores how excessive noise affects human health, wildlife, infrastructure, and proposes practical solutions like sensor-based monitoring and quiet zone implementation.
 
-## 🛠️ Skills Used
+## 🛠️ Used Technologies
 
 | Technology | Purpose |
 |------------|---------|
