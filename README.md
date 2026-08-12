@@ -3,7 +3,7 @@ Y8 PBL Project (reupload, original repo at: https://github.com/aliki132/ICT-Y8-S
 
 > *Smart Urban Acoustic Management*
 
-**PBL Project (Project-Based-Learning) | Year 8 | Group 2**
+**Project-Based-Learning Project | Year 8**
 
 A multi-page website exploring urban noise pollution, its impact on human health, wildlife, and infrastructure, and proposing smart acoustic management solutions.
 
@@ -19,5 +19,3 @@ AcoustiNet is an educational website designed to raise awareness about urban noi
 | HTML5 | Structure |
 | Bootstrap 5 | Layout & components |
 | CSS3 | Styling, animations, transitions |
-
-Team Members: Zay Lin Khant, Zin Win Htun, Min Khant Sithu
